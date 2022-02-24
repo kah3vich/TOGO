@@ -1,0 +1,334 @@
+@@include('components/_head.pug', {
+    "title": "Главная",
+})
+
+
+
+section.ind-headers 
+    @@include('components/_header.pug')
+    .containers 
+        .ind-headers__wrapper 
+            .ind-headers__content 
+                .ind-headers__content-t С нами твои товары всегда будут в топе
+                .ind-headers__content-d Продвигай свои товары на Wildberries и Ozon за пару кликов 
+                .ind-headers__content-btns 
+                    a(href="#").ind-headers__content-b
+                        p Попробовать бесплатно
+                        img(src="./svg/headers/arrow-right.svg" alt="icons")
+                    a(href="#").ind-headers__content-wb
+                        img(src="./svg/headers/wb.svg" alt="icons")  
+                        p Wildberries
+                    a(href="#").ind-headers__content-ozon 
+                        img(src="./img/headers/ozon.png" alt="icons")  
+                        p Ozon
+                ul.ind-headers__content-l 
+                    li.ind-headers__content-i 
+                        h3 5 127
+                        p Зарегистрировались на сервисе
+                    li.ind-headers__content-ln
+                    li.ind-headers__content-i 
+                        h3 18 678
+                        p Сделанных выкупов
+                    li.ind-headers__content-ln
+                    li.ind-headers__content-i 
+                        h3 12 432
+                        p Оставленных отзывов
+            .ind-headers__banner
+                ul.ind-headers__banner-d 
+                    li.ind-headers__banner-i 
+                    li.ind-headers__banner-i 
+                    li.ind-headers__banner-i 
+                .ind-headers__banner-p 
+                    img(src="./img/headers/banner.png" alt="img")
+
+a(name="service") 
+section.ind-service 
+    .ind-service__containers 
+        .ind-service__content 
+            .ind-service__content-t Как работает наш сервис?
+            ul.ind-service__content-l 
+                li.ind-service__content-d 
+                    .ind-service__content-dec 
+                    .ind-service__content-dec 
+                    .ind-service__content-dec
+                li.ind-service__content-i.ind-service__content-i-one
+                    .ind-service__content-n 
+                        p 1
+                    .ind-service__content-text
+                        p Wildberries и Ozon ранжирует товары в поисковой выдаче исходя из продаж за последние 14 дней. Чем больше продаж ты делаешь, тем выше находишься. ТОП — это проводник к продажам и увеличению дохода
+                li.ind-service__content-i.ind-service__content-i-two
+                    .ind-service__content-n 
+                        p 2 
+                    .ind-service__content-text
+                        p Чтобы выйти в ТОП, нужно знать, сколько зарабатывает твой конкурент. Наш сервис анализирует продажи конкурентов, и сам подбирает нужные инструменты, тебе лишь нужно нажать две кнопки мыши 
+                    .ind-service__content-decr-1
+                    .ind-service__content-decr-2
+                    .ind-service__content-decr-3
+                li.ind-service__content-i.ind-service__content-i-three
+                    .ind-service__content-n 
+                        p 3 
+                    .ind-service__content-text
+                        p В течение следующих 14 дней togotop.ru совершает необходимое количество выкупов, добавляет товар в избранное, оставляет отзывы (псс... отзывы у нас бесплатные)
+                    .ind-service__content-decr-1
+                    .ind-service__content-decr-2
+                    .ind-service__content-decr-3
+                li.ind-service__content-i.ind-service__content-i-four
+                    .ind-service__content-n 
+                        p 4
+                    .ind-service__content-text
+                        p Ура! Теперь товар в ТОПе, а у тебя осталось время для совершения новых успешных подвигов 
+
+a(name="work")
+section.ind-work 
+    .containers 
+        .ind-work__content
+            .ind-work__content-t Почему нужно работать именно с нами? 
+            .ind-work__content-b 
+                img(src="./svg/work/banner.svg" alt="banner")
+            ul.ind-work__content-l
+                li.ind-work__content-i 
+                    .ind-work__content-title Уникальный опыт 
+                    .ind-work__content-text Мы сами уже больше 3 лет продаём свои товары на маркетплейсах. И вопрос: «как выйти в ТОП?» всегда был на первом месте. Поэтому и был придуман этот сервис — для нас и для тебя, чтобы сэкономить время, нервы и деньги 
+                    .ind-work__content-decr 
+                        img(src="./svg/work/icons-1.svg" alt="icons")
+                        img(src="./svg/work/dec-icons-1.svg" alt="icons")
+
+                li.ind-work__content-i 
+                    .ind-work__content-title Быстро и просто 
+                    .ind-work__content-text Всего несколько движений мышью и ты уже увеличил свою прибыль в несколько раз, при этом не потратил самый драгоценный ресурс – время
+                    .ind-work__content-decr 
+                        img(src="./svg/work/icons-2.svg" alt="icons")
+                        img(src="./svg/work/dec-icons-2.svg" alt="icons")
+
+                li.ind-work__content-i 
+                    .ind-work__content-title Комплексные 
+                        br
+                        | решения 
+                    .ind-work__content-text Сервис togotop.ru полностью автоматизирован — его алгоритм сам подбирает необходимое количество инструментов, чтобы попасть в ТОП. Поэтому мы точно знаем, что нужно именно тебе + мы предоставляем не только выкупы, но и отзывы, лайки, добавление в избранное и даже лайки на отзывы 
+                    .ind-work__content-decr 
+                        img(src="./svg/work/icons-3.svg" alt="icons")
+                        img(src="./svg/work/dec-icons-3.svg" alt="icons")
+
+
+section.ind-market 
+    .containers 
+        .ind-market__content 
+            .ind-market__content-t Выход в ТОП на МаркетплейсЕ
+            .ind-market__content-d
+                img(src="./svg/market/banner.svg" alt="icons") 
+            ul.ind-market__content-l 
+                li.ind-market__content-i
+                    .ind-market__content-p 
+                        img(src="./img/market/img.png" alt="img")
+                        .ind-market__content-promotion 
+                            p -33%
+                    .ind-market__content-price 
+                        .ind-market__content-last 8 000 ₽
+                        .ind-market__content-prev 10 000 ₽
+                    .ind-market__content-type 
+                        p Футбольный мяч
+                        span /
+                        p Спорт
+                    .ind-market__content-descr 
+                        h3 60 000₽ 
+                        p До / день
+                li.ind-market__content-i
+                    .ind-market__content-p 
+                        img(src="./img/market/img.png" alt="img")
+                        .ind-market__content-promotion 
+                            p -33%
+                    .ind-market__content-price 
+                        .ind-market__content-last 8 000 ₽
+                        .ind-market__content-prev 10 000 ₽
+                    .ind-market__content-type 
+                        p Футбольный мяч
+                        span /
+                        p Спорт
+                    .ind-market__content-descr 
+                        h3 60 000₽ 
+                        p До / день
+                li.ind-market__content-i
+                    .ind-market__content-p 
+                        img(src="./img/market/img.png" alt="img")
+                        .ind-market__content-promotion 
+                            p -33%
+                    .ind-market__content-price 
+                        .ind-market__content-last 8 000 ₽
+                        .ind-market__content-prev 10 000 ₽
+                    .ind-market__content-type 
+                        p Футбольный мяч
+                        span /
+                        p Спорт
+                    .ind-market__content-descr 
+                        h3 60 000₽ 
+                        p До / день
+                li.ind-market__content-i
+                    .ind-market__content-p 
+                        img(src="./img/market/img.png" alt="img")
+                        .ind-market__content-promotion 
+                            p -33%
+                    .ind-market__content-price 
+                        .ind-market__content-last 8 000 ₽
+                        .ind-market__content-prev 10 000 ₽
+                    .ind-market__content-type 
+                        p Футбольный мяч
+                        span /
+                        p Спорт
+                    .ind-market__content-descr 
+                        h3 60 000₽ 
+                        p До / день
+
+a(name="tariff") 
+section.ind-tariff
+    .containers 
+        .ind-tariff__content 
+            .ind-tariff__content-t Тарифы 
+            ul.ind-tariff__content-l 
+                li.ind-tariff__content-i 
+                    .ind-tariff__content-title НОВИЧОК:
+                    .ind-tariff__content-p 
+                        p от
+                            span 75₽
+                            | за 1 выкуп 
+                    .ind-tariff__content-plus 
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15" cy="15" r="14" stroke="#525666" stroke-width="2"/>
+                            <path d="M7.5 15.25L12.1565 20.25L23.25 9" stroke="#525666" stroke-width="2"/>
+                        </svg>
+                        p на 1 месяц
+                    .ind-tariff__content-plus 
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15" cy="15" r="14" stroke="#525666" stroke-width="2"/>
+                            <path d="M7.5 15.25L12.1565 20.25L23.25 9" stroke="#525666" stroke-width="2"/>
+                        </svg>
+                        p 50 выкупов
+                    .ind-tariff__content-plus 
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15" cy="15" r="14" stroke="#525666" stroke-width="2"/>
+                            <path d="M7.5 15.25L12.1565 20.25L23.25 9" stroke="#525666" stroke-width="2"/>
+                        </svg>
+                        p бесплатные отзывы 
+                    a(href="#").ind-tariff__content-btn
+                        p Попробовать бесплатно
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.43 5.92993L20.5 11.9999L14.43 18.0699" stroke="#E5F6FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.5 12H20.33" stroke="#E5F6FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                li.ind-tariff__content-i 
+                    .ind-tariff__content-title НОВИЧОК:
+                    .ind-tariff__content-p 
+                        p от
+                            span 75₽
+                            | за 1 выкуп 
+                    .ind-tariff__content-plus 
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15" cy="15" r="14" stroke="#525666" stroke-width="2"/>
+                            <path d="M7.5 15.25L12.1565 20.25L23.25 9" stroke="#525666" stroke-width="2"/>
+                        </svg>
+                        p на 1 месяц
+                    .ind-tariff__content-plus 
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15" cy="15" r="14" stroke="#525666" stroke-width="2"/>
+                            <path d="M7.5 15.25L12.1565 20.25L23.25 9" stroke="#525666" stroke-width="2"/>
+                        </svg>
+                        p 50 выкупов
+                    .ind-tariff__content-plus 
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15" cy="15" r="14" stroke="#525666" stroke-width="2"/>
+                            <path d="M7.5 15.25L12.1565 20.25L23.25 9" stroke="#525666" stroke-width="2"/>
+                        </svg>
+                        p бесплатные отзывы 
+                    a(href="#").ind-tariff__content-btn
+                        p Попробовать бесплатно
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.43 5.92993L20.5 11.9999L14.43 18.0699" stroke="#E5F6FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.5 12H20.33" stroke="#E5F6FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                li.ind-tariff__content-i 
+                    .ind-tariff__content-title НОВИЧОК:
+                    .ind-tariff__content-p 
+                        p от
+                            span 75₽
+                            | за 1 выкуп 
+                    .ind-tariff__content-plus 
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15" cy="15" r="14" stroke="#525666" stroke-width="2"/>
+                            <path d="M7.5 15.25L12.1565 20.25L23.25 9" stroke="#525666" stroke-width="2"/>
+                        </svg>
+                        p на 1 месяц
+                    .ind-tariff__content-plus 
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15" cy="15" r="14" stroke="#525666" stroke-width="2"/>
+                            <path d="M7.5 15.25L12.1565 20.25L23.25 9" stroke="#525666" stroke-width="2"/>
+                        </svg>
+                        p 50 выкупов
+                    .ind-tariff__content-plus 
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15" cy="15" r="14" stroke="#525666" stroke-width="2"/>
+                            <path d="M7.5 15.25L12.1565 20.25L23.25 9" stroke="#525666" stroke-width="2"/>
+                        </svg>
+                        p бесплатные отзывы 
+                    a(href="#").ind-tariff__content-btn
+                        p Попробовать бесплатно
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.43 5.92993L20.5 11.9999L14.43 18.0699" stroke="#E5F6FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.5 12H20.33" stroke="#E5F6FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
+
+
+
+
+section.ind-banner 
+    .containers 
+        .ind-banner__content
+            .ind-banner__content-t Хочешь стать ТОПовым продавцом на маркетплейсах России? подключи togotop.ru 
+            .ind-banner__content-d Весь функционал абсолютно бесплатно на 3 дня
+            a(href="#").ind-banner__content-b
+                p Попробовать  
+                img(src="./svg/banner/arrow.svg" alt="icons")
+
+
+section.ind-question
+    .containers 
+        .ind-question__content 
+            .ind-question__content-t Вопросы и ответы
+            .ind-question__content-d 
+                img(src="./svg/question/banner.svg" alt="icons")
+            ul.ind-question__content-l
+                li.ind-question__content-i 
+                    .ind-question__content-c 
+                        h3 Я могу и сам выйти на маркетплейс, зачем вы мне нужны?
+                        img(src="./svg/question/plus.svg" alt="icons")
+                    .ind-question__content-line 
+                    .ind-question__content-text.question-hide У разных маркетплейсов разные требования. Мы вывели 3000+ продавцов за 2,5 года работы и знаем точно как пройти модерацию. Не теряйте время на изучение материалов, начните продавать скорее с нами.
+                li.ind-question__content-i 
+                    .ind-question__content-c 
+                        h3 Я могу и сам выйти на маркетплейс, зачем вы мне нужны?
+                        img(src="./svg/question/plus.svg" alt="icons")
+                    .ind-question__content-line 
+                    .ind-question__content-text.question-hide У разных маркетплейсов разные требования. Мы вывели 3000+ продавцов за 2,5 года работы и знаем точно как пройти модерацию. Не теряйте время на изучение материалов, начните продавать скорее с нами.
+                li.ind-question__content-i 
+                    .ind-question__content-c 
+                        h3 Я могу и сам выйти на маркетплейс, зачем вы мне нужны?
+                        img(src="./svg/question/plus.svg" alt="icons")
+                    .ind-question__content-line 
+                    .ind-question__content-text.question-hide У разных маркетплейсов разные требования. Мы вывели 3000+ продавцов за 2,5 года работы и знаем точно как пройти модерацию. Не теряйте время на изучение материалов, начните продавать скорее с нами.
+                li.ind-question__content-i 
+                    .ind-question__content-c 
+                        h3 Я могу и сам выйти на маркетплейс, зачем вы мне нужны?
+                        img(src="./svg/question/plus.svg" alt="icons")
+                    .ind-question__content-line 
+                    .ind-question__content-text.question-hide У разных маркетплейсов разные требования. Мы вывели 3000+ продавцов за 2,5 года работы и знаем точно как пройти модерацию. Не теряйте время на изучение материалов, начните продавать скорее с нами.
+                li.ind-question__content-i 
+                    .ind-question__content-c 
+                        h3 Я могу и сам выйти на маркетплейс, зачем вы мне нужны?
+                        img(src="./svg/question/plus.svg" alt="icons")
+                    .ind-question__content-line 
+                    .ind-question__content-text.question-hide У разных маркетплейсов разные требования. Мы вывели 3000+ продавцов за 2,5 года работы и знаем точно как пройти модерацию. Не теряйте время на изучение материалов, начните продавать скорее с нами.
+
+
+
+@@include('components/_footer.pug')
+
+@@include('components/_script.pug')

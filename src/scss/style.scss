@@ -1,0 +1,286 @@
+@import "fonts";
+
+//! --------------------------------------------------------------------
+//! Переменные ---------------------------------------------------------
+//! --------------------------------------------------------------------
+
+$bg: #fff;
+
+//! --------------------------------------------------------------------
+//! Стили --------------------------------------------------------------
+//! --------------------------------------------------------------------
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+    scroll-behavior: smooth;
+}
+body {
+	width: 100%;
+	position: relative;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+input {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border: none;
+}
+button {
+	padding: 0;
+	border: none;
+	cursor: pointer;
+}
+.containers {
+	max-width: 1440px;
+	padding: 0 120px;
+	margin: 0 auto;
+	width: 100%;
+}
+ol,
+ul {
+	padding-left: 0;
+}
+dl,
+ol,
+ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.display-n {
+	display: none !important;
+}
+
+.question-hide {
+	transition: all 0.5s ease;
+	height: 0;
+	overflow: hidden;
+	margin: 0 0 0 0 !important;
+}
+
+.ind-header {
+	width: 100%;
+	background: transparent;
+	padding: 35px 0;
+	position: relative;
+	z-index: 5;
+	&__containers {
+		max-width: 1440px;
+		padding: 0 120px 0 100px;
+		margin: 0 auto;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__logo {
+		cursor: pointer;
+	}
+	&__list {
+		display: flex;
+		align-content: center;
+		justify-content: center;
+		gap: 32px;
+	}
+	&__items {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 32px;
+		cursor: pointer;
+		&-i {
+			font-family: TT Norms;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 120%;
+			letter-spacing: 0.02em;
+			color: #000000;
+		}
+	}
+	&__btns {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 31px;
+	}
+	&__start {
+		padding: 15px 50px;
+		border: 1.5px solid #000000;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		justify-content: center;
+		text-align: center;
+		border-radius: 40px;
+		background: transparent;
+		& p {
+			font-family: TT Norms;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 19px;
+			text-align: center;
+			color: #000000;
+		}
+	}
+	&__enter {
+		background: transparent;
+		cursor: pointer;
+		& p {
+			font-family: TT Norms;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 16px;
+			line-height: 19px;
+			text-align: center;
+			color: #000000;
+		}
+	}
+}
+
+.ind-footer {
+	background: #4f6bfd;
+	width: 100%;
+	padding: 38px 0 57px 0;
+	&__content {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		&-logo {
+			cursor: pointer;
+			margin: 0 auto;
+			& a {
+				margin: 0 auto;
+			}
+		}
+		&-t {
+			width: 788px;
+			font-family: TT Norms;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 24px;
+			text-align: center;
+			color: #ffffff;
+		}
+		&-m {
+			margin: 25px 0 0 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 12px;
+		}
+		&-c {
+			width: 48px;
+			height: 48px;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			border: 2px solid #ffffff;
+			border-radius: 30px;
+			& a {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+		&-l {
+			margin: 60px 0 0 0;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+		}
+		&-year {
+			font-family: TT Norms;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 17px;
+			color: #ededed;
+		}
+		&-create {
+			font-family: TT Norms;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 17px;
+			color: #ededed;
+			cursor: pointer;
+			& a {
+				font-family: TT Norms;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 17px;
+				color: #ededed;
+				cursor: pointer;
+			}
+		}
+		&-path {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 30px;
+			margin: 0 0 0 120px;
+			& a {
+				font-family: TT Norms;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 18px;
+				line-height: 120%;
+				letter-spacing: 0.02em;
+				color: #ffffff;
+				cursor: pointer;
+			}
+			& p {
+				color: #fff;
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+//! --------------------------------------------------------------------
+//! Подключение файлов -------------------------------------------------
+//! --------------------------------------------------------------------
+
+@import "index/style";
+
+//! --------------------------------------------------------------------
+//! --------------------------------------------------------------------
+//! --------------------------------------------------------------------
