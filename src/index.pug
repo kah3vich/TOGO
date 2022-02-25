@@ -4,7 +4,7 @@
 
 
 
-section.ind-headers 
+section.ind-headers
     @@include('components/_header.pug')
     .containers 
         .ind-headers__wrapper 
@@ -42,44 +42,54 @@ section.ind-headers
                     img(src="./img/headers/banner.png" alt="img")
 
 a(name="service") 
-section.ind-service 
+section.ind-service
     .ind-service__containers 
         .ind-service__content 
             .ind-service__content-t Как работает наш сервис?
-            ul.ind-service__content-l 
-                li.ind-service__content-d 
+            .ind-service__content-l 
+                .ind-service__content-d 
                     .ind-service__content-dec 
                     .ind-service__content-dec 
                     .ind-service__content-dec
-                li.ind-service__content-i.ind-service__content-i-one
-                    .ind-service__content-n 
-                        p 1
-                    .ind-service__content-text
-                        p Wildberries и Ozon ранжирует товары в поисковой выдаче исходя из продаж за последние 14 дней. Чем больше продаж ты делаешь, тем выше находишься. ТОП — это проводник к продажам и увеличению дохода
-                li.ind-service__content-i.ind-service__content-i-two
-                    .ind-service__content-n 
-                        p 2 
-                    .ind-service__content-text
-                        p Чтобы выйти в ТОП, нужно знать, сколько зарабатывает твой конкурент. Наш сервис анализирует продажи конкурентов, и сам подбирает нужные инструменты, тебе лишь нужно нажать две кнопки мыши 
-                    .ind-service__content-decr-1
-                    .ind-service__content-decr-2
-                    .ind-service__content-decr-3
-                li.ind-service__content-i.ind-service__content-i-three
-                    .ind-service__content-n 
-                        p 3 
-                    .ind-service__content-text
-                        p В течение следующих 14 дней togotop.ru совершает необходимое количество выкупов, добавляет товар в избранное, оставляет отзывы (псс... отзывы у нас бесплатные)
-                    .ind-service__content-decr-1
-                    .ind-service__content-decr-2
-                    .ind-service__content-decr-3
-                li.ind-service__content-i.ind-service__content-i-four
-                    .ind-service__content-n 
-                        p 4
-                    .ind-service__content-text
-                        p Ура! Теперь товар в ТОПе, а у тебя осталось время для совершения новых успешных подвигов 
+                .swiper.indexService
+                    .swiper-wrapper
+                        .swiper-slide 
+                            .ind-service__content-i.ind-service__content-i-one
+                                .ind-service__content-n 
+                                    p 1
+                                .ind-service__content-text
+                                    p Wildberries и Ozon ранжирует товары в поисковой выдаче исходя из продаж за последние 14 дней. Чем больше продаж ты делаешь, тем выше находишься. ТОП — это проводник к продажам и увеличению дохода
+                        .swiper-slide 
+                            .ind-service__content-i.ind-service__content-i-two
+                                .ind-service__content-n 
+                                    p 2 
+                                .ind-service__content-text
+                                    p Чтобы выйти в ТОП, нужно знать, сколько зарабатывает твой конкурент. Наш сервис анализирует продажи конкурентов, и сам подбирает нужные инструменты, тебе лишь нужно нажать две кнопки мыши 
+                                .ind-service__content-decr-1
+                                .ind-service__content-decr-2
+                                .ind-service__content-decr-3
+                        .swiper-slide 
+                            .ind-service__content-i.ind-service__content-i-three
+                                .ind-service__content-n 
+                                    p 3 
+                                .ind-service__content-text
+                                    p В течение следующих 14 дней togotop.ru совершает необходимое количество выкупов, добавляет товар в избранное, оставляет отзывы (псс... отзывы у нас бесплатные)
+                                .ind-service__content-decr-1
+                                .ind-service__content-decr-2
+                                .ind-service__content-decr-3
+                        .swiper-slide 
+                            .ind-service__content-i.ind-service__content-i-four
+                                .ind-service__content-n 
+                                    p 4
+                                .ind-service__content-text
+                                    p Ура! Теперь товар в ТОПе, а у тебя осталось время для совершения новых успешных подвигов 
+                .swiper-controls 
+                    .swiper-button-next
+                    .swiper-button-prev
+                    .swiper-pagination
 
 a(name="work")
-section.ind-work 
+section.ind-work
     .containers 
         .ind-work__content
             .ind-work__content-t Почему нужно работать именно с нами? 
@@ -109,7 +119,7 @@ section.ind-work
                         img(src="./svg/work/icons-3.svg" alt="icons")
                         img(src="./svg/work/dec-icons-3.svg" alt="icons")
 
-section.ind-market 
+section.ind-market.display-n
     .containers 
         .ind-market__content 
             .ind-market__content-t Выход в ТОП на МаркетплейсЕ
@@ -275,7 +285,7 @@ section.ind-tariff
                         </svg>
 
 a(name="reviews")
-section.ind-reviews 
+section.ind-reviews.display-n
     .containers 
         .ind-reviews__content 
             .ind-reviews__content-t Отзывы 
@@ -429,7 +439,7 @@ section.ind-reviews
                     .swiper-button-prev
                     .swiper-pagination
 
-section.ind-banner 
+section.ind-banner
     .containers 
         .ind-banner__content
             .ind-banner__content-t Хочешь стать ТОПовым продавцом на маркетплейсах России? подключи togotop.ru 

@@ -3,6 +3,7 @@
 	background: #fff3f0;
 	position: relative;
 	overflow: hidden;
+	height: 100vh;
 	&::after {
 		content: "";
 		position: absolute;
@@ -257,6 +258,19 @@
 			justify-content: center;
 			gap: 43px;
 			margin: 153px 0 0 0;
+			width: 100%;
+			& .swiper-wrapper {
+				gap: 6px;
+			}
+			& .swiper-button-next {
+				display: none;
+			}
+			& .swiper-button-prev {
+				display: none;
+			}
+			& .swiper-pagination {
+				display: none;
+			}
 		}
 		&-d {
 			position: absolute;
