@@ -608,7 +608,7 @@ h6 {
 }
 
 .ind-header__logo img {
-	width : 214px;
+	width : 190px;
 }
 
 .ind-header__list {
@@ -676,6 +676,23 @@ h6 {
 	text-align : center;
 	border-radius : 40px;
 	background : transparent;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+}
+
+.ind-header__start:hover {
+	background : #000000;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+}
+
+.ind-header__start:hover p {
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+	color : #ffffff;
 }
 
 .ind-header__start p {
@@ -686,6 +703,9 @@ h6 {
 	line-height : 19px;
 	text-align : center;
 	color : #000000;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
 }
 
 .ind-header__enter {
@@ -949,7 +969,7 @@ h6 {
 	position : absolute;
 	width : 25px;
 	height : 25px;
-	top : 0;
+	top : 35px;
 	left : 0;
 	background : url("./../svg/headers/decor-1.svg") no-repeat;
 }
@@ -1044,16 +1064,43 @@ h6 {
 	gap : 13px;
 	cursor : pointer;
 	margin : 0 20px 0 0;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+}
+
+.ind-headers__content-b:hover {
+	background : #4f6bfd;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+}
+
+.ind-headers__content-b:hover p {
+	color : #ffffff;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
+}
+
+.ind-headers__content-b:hover svg path {
+	stroke : #ffffff;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
 }
 
 .ind-headers__content-b p {
-	font-family : TT Norms;
+	font-family : TTNorms;
 	font-style : normal;
 	font-weight : 500;
 	font-size : 18px;
 	line-height : 120%;
 	letter-spacing : 0.02em;
 	color : #4f6bfd;
+	-webkit-transition : all 0.5s ease;
+	     -o-transition : all 0.5s ease;
+	        transition : all 0.5s ease;
 }
 
 .ind-headers__content-wb {
@@ -1141,7 +1188,7 @@ h6 {
 }
 
 .ind-headers__content-i p {
-	font-family : TT Norms;
+	font-family : TTNorms;
 	font-style : normal;
 	font-weight : normal;
 	font-size : 15px;
@@ -1210,10 +1257,18 @@ h6 {
 	position : relative;
 }
 
-.ind-service::after {
+.ind-service__containers {
+	max-width : 1440px;
+	padding : 0 77px;
+	margin : 0 auto;
+	width : 100%;
+	position : relative;
+}
+
+.ind-service__containers::after {
 	content : "";
 	position : absolute;
-	top : 56px;
+	top : -56px;
 	left : 50%;
 	-webkit-transform : translate(-50%, 0%);
 	    -ms-transform : translate(-50%, 0%);
@@ -1221,13 +1276,6 @@ h6 {
 	width : 25px;
 	height : 25px;
 	background : url("./../svg/service/decor-1.svg") no-repeat;
-}
-
-.ind-service__containers {
-	max-width : 1440px;
-	padding : 0 77px;
-	margin : 0 auto;
-	width : 100%;
 }
 
 .ind-service__content {
@@ -1599,7 +1647,7 @@ h6 {
 }
 
 .ind-work__content-i:nth-child(1) .ind-work__content-title {
-	font-family : TT Norms;
+	font-family : TTNorms;
 	font-style : normal;
 	font-weight : 500;
 	font-size : 22px;
@@ -1633,7 +1681,7 @@ h6 {
 }
 
 .ind-work__content-i:nth-child(2) .ind-work__content-title {
-	font-family : TT Norms;
+	font-family : TTNorms;
 	font-style : normal;
 	font-weight : 500;
 	font-size : 22px;
@@ -1667,7 +1715,7 @@ h6 {
 }
 
 .ind-work__content-i:nth-child(3) .ind-work__content-title {
-	font-family : TT Norms;
+	font-family : TTNorms;
 	font-style : normal;
 	font-weight : 500;
 	font-size : 22px;
@@ -1702,7 +1750,7 @@ h6 {
 
 .ind-work__content-text {
 	margin : 11px 0 0 0;
-	font-family : TT Norms;
+	font-family : TTNorms;
 	font-style : normal;
 	font-weight : 500;
 	font-size : 16px;
@@ -1802,12 +1850,17 @@ h6 {
 .ind-market__content-i:nth-child(1) {
 	position : absolute;
 	top : 235px;
-	opacity : 0.4;
+	opacity : 0.4 !important;
 	left : -164px;
+	background : #7C7C7C;
 }
 
 .ind-market__content-i:nth-child(1) .ind-market__content-descr {
 	display : none;
+}
+
+.ind-market__content-i:nth-child(1) .ind-market__content-p {
+	border : 16px solid #7C7C7C;
 }
 
 .ind-market__content-i:nth-child(2) {
@@ -2182,7 +2235,7 @@ h6 {
 }
 
 .ind-tariff__content-p p {
-	font-family : TT Norms;
+	font-family : TTNorms;
 	font-style : normal;
 	font-weight : normal;
 	font-size : 30px;
@@ -2195,7 +2248,7 @@ h6 {
 }
 
 .ind-tariff__content-p p span {
-	font-family : TT Norms;
+	font-family : TTNorms;
 	font-style : normal;
 	font-weight : bold;
 	font-size : 30px;
@@ -2238,7 +2291,7 @@ h6 {
 }
 
 .ind-tariff__content-plus p {
-	font-family : TT Norms;
+	font-family : TTNorms;
 	font-style : normal;
 	font-weight : normal;
 	font-size : 20px;
@@ -2272,7 +2325,7 @@ h6 {
 }
 
 .ind-tariff__content-btn p {
-	font-family : TT Norms;
+	font-family : TTNorms;
 	font-style : normal;
 	font-weight : 500;
 	font-size : 18px;
@@ -2350,7 +2403,7 @@ h6 {
 
 .ind-banner__content-d {
 	margin : 40px auto 0 auto;
-	font-family : TT Norms;
+	font-family : TTNorms;
 	font-style : normal;
 	font-weight : normal;
 	font-size : 20px;
@@ -2378,7 +2431,7 @@ h6 {
 }
 
 .ind-banner__content-b p {
-	font-family : TT Norms;
+	font-family : TTNorms;
 	font-style : normal;
 	font-weight : 500;
 	font-size : 18px;
@@ -2488,7 +2541,7 @@ h6 {
 
 .ind-question__content-c h3 {
 	width : 95%;
-	font-family : TT Norms;
+	font-family : TTNorms;
 	font-style : normal;
 	font-weight : bold;
 	font-size : 24px;
@@ -2511,7 +2564,7 @@ h6 {
 
 .ind-question__content-text {
 	margin : 60px 0 10px 0;
-	font-family : TT Norms;
+	font-family : TTNorms;
 	font-style : normal;
 	font-weight : 500;
 	-webkit-transition : all 0.5s ease;
@@ -2703,7 +2756,7 @@ h6 {
 }
 
 .ind-reviews__content-title h3 {
-	font-family : TT Norms;
+	font-family : TTNorms;
 	font-style : normal;
 	font-weight : bold;
 	font-size : 30px;
@@ -2712,7 +2765,7 @@ h6 {
 }
 
 .ind-reviews__content-title p {
-	font-family : TT Norms;
+	font-family : TTNorms;
 	font-style : normal;
 	font-weight : normal;
 	font-size : 17px;
@@ -2721,7 +2774,7 @@ h6 {
 }
 
 .ind-reviews__content-title p span {
-	font-family : TT Norms;
+	font-family : TTNorms;
 	font-style : normal;
 	font-weight : 500;
 	font-size : 17px;

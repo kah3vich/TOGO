@@ -14,11 +14,16 @@ section.ind-headers
         .ind-headers__wrapper.wow.fadeInUp(data-wow-delay="3.3s")
             .ind-headers__content 
                 .ind-headers__content-t.wow.fadeInUp(data-wow-delay="3.4s") С нами твои товары всегда будут в топе
-                .ind-headers__content-d.wow.fadeInUp(data-wow-delay="3.5s") Продвигай свои товары на Wildberries и Ozon за пару кликов 
+                .ind-headers__content-d.wow.fadeInUp(data-wow-delay="3.5s") Продвигай свои товары на Wildberries и Ozon
+                    br
+                    | за пару кликов 
                 .ind-headers__content-btns.wow.fadeInUp(data-wow-delay="3.6s") 
                     a(href="#").ind-headers__content-b
-                        p Попробовать бесплатно
-                        img(src="./svg/headers/arrow-right.svg" alt="icons")
+                        p Попробовать
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.43 5.93018L20.5 12.0002L14.43 18.0702" stroke="#4F6BFD" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.5 12H20.33" stroke="#4F6BFD" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     a(href="#").ind-headers__content-wb
                         img(src="./svg/headers/wb.svg" alt="icons")  
                         p Wildberries
@@ -49,24 +54,24 @@ section.ind-headers
 
 a(name="service") 
 section.ind-service
-    .ind-service__containers 
-        .ind-service__content 
-            .ind-service__content-t Как работает наш сервис?
+    .ind-service__containers.wow.fadeInDown(data-wow-delay="0.4s")
+        .ind-service__content
+            .ind-service__content-t.wow.fadeInDown(data-wow-delay="0.5s") Как работает наш сервис?
             .ind-service__content-l 
                 .ind-service__content-d 
-                    .ind-service__content-dec 
-                    .ind-service__content-dec 
-                    .ind-service__content-dec
+                    .ind-service__content-dec.wow.fadeInDown(data-wow-delay="0.7s")
+                    .ind-service__content-dec.wow.fadeInDown(data-wow-delay="0.8s") 
+                    .ind-service__content-dec.wow.fadeInDown(data-wow-delay="0.9s")
                 .swiper.indexService
                     .swiper-wrapper
-                        .swiper-slide 
-                            .ind-service__content-i.ind-service__content-i-one
+                        .swiper-slide
+                            .ind-service__content-i.ind-service__content-i-one.wow.fadeInUp(data-wow-delay="0.5s")
                                 .ind-service__content-n 
                                     p 1
                                 .ind-service__content-text
                                     p Wildberries и Ozon ранжирует товары в поисковой выдаче исходя из продаж за последние 14 дней. Чем больше продаж ты делаешь, тем выше находишься. ТОП — это проводник к продажам и увеличению дохода
                         .swiper-slide 
-                            .ind-service__content-i.ind-service__content-i-two
+                            .ind-service__content-i.ind-service__content-i-two.wow.fadeInUp(data-wow-delay="0.6s")
                                 .ind-service__content-n 
                                     p 2 
                                 .ind-service__content-text
@@ -75,7 +80,7 @@ section.ind-service
                                 .ind-service__content-decr-2
                                 .ind-service__content-decr-3
                         .swiper-slide 
-                            .ind-service__content-i.ind-service__content-i-three
+                            .ind-service__content-i.ind-service__content-i-three.wow.fadeInUp(data-wow-delay="0.8s")
                                 .ind-service__content-n 
                                     p 3 
                                 .ind-service__content-text
@@ -84,12 +89,12 @@ section.ind-service
                                 .ind-service__content-decr-2
                                 .ind-service__content-decr-3
                         .swiper-slide 
-                            .ind-service__content-i.ind-service__content-i-four
+                            .ind-service__content-i.ind-service__content-i-four.wow.fadeInUp(data-wow-delay="0.9s")
                                 .ind-service__content-n 
                                     p 4
                                 .ind-service__content-text
                                     p Ура! Теперь товар в ТОПе, а у тебя осталось время для совершения новых успешных подвигов 
-                .swiper-controls 
+                .swiper-controls.wow.fadeInUp(data-wow-delay="0.6s")
                     .swiper-button-next
                     .swiper-button-prev
                     .swiper-pagination
@@ -97,26 +102,26 @@ section.ind-service
 a(name="work")
 section.ind-work
     .containers 
-        .ind-work__content
-            .ind-work__content-t Почему нужно работать именно с нами? 
-            .ind-work__content-b 
+        .ind-work__content.wow.fadeInDown(data-wow-delay="0.4s")
+            .ind-work__content-t.wow.fadeInDown(data-wow-delay="0.5s") Почему нужно работать именно с нами? 
+            .ind-work__content-b.wow.fadeInUp(data-wow-delay="0.9s")
                 img(src="./svg/work/banner.svg" alt="banner")
             ul.ind-work__content-l
-                li.ind-work__content-i 
+                li.ind-work__content-i.wow.fadeInUp(data-wow-delay="0.6s")
                     .ind-work__content-title Уникальный опыт 
                     .ind-work__content-text Мы сами уже больше 3 лет продаём свои товары на маркетплейсах. И вопрос: «как выйти в ТОП?» всегда был на первом месте. Поэтому и был придуман этот сервис — для нас и для тебя, чтобы сэкономить время, нервы и деньги 
                     .ind-work__content-decr 
                         img(src="./svg/work/icons-1.svg" alt="icons")
                         img(src="./svg/work/dec-icons-1.svg" alt="icons")
 
-                li.ind-work__content-i 
+                li.ind-work__content-i.wow.fadeInUp(data-wow-delay="0.7s") 
                     .ind-work__content-title Быстро и просто 
                     .ind-work__content-text Всего несколько движений мышью и ты уже увеличил свою прибыль в несколько раз, при этом не потратил самый драгоценный ресурс – время
                     .ind-work__content-decr 
                         img(src="./svg/work/icons-2.svg" alt="icons")
                         img(src="./svg/work/dec-icons-2.svg" alt="icons")
 
-                li.ind-work__content-i 
+                li.ind-work__content-i.wow.fadeInUp(data-wow-delay="0.8s")
                     .ind-work__content-title Комплексные 
                         br
                         | решения 
@@ -125,14 +130,14 @@ section.ind-work
                         img(src="./svg/work/icons-3.svg" alt="icons")
                         img(src="./svg/work/dec-icons-3.svg" alt="icons")
 
-section.ind-market.display-n
+section.ind-market
     .containers 
-        .ind-market__content 
-            .ind-market__content-t Выход в ТОП на МаркетплейсЕ
-            .ind-market__content-d
+        .ind-market__content.wow.fadeInDown(data-wow-delay="0.4s") 
+            .ind-market__content-t.wow.fadeInDown(data-wow-delay="0.5s") Выход в ТОП на МаркетплейсЕ
+            .ind-market__content-d.wow.fadeInUp(data-wow-delay="0.7s") 
                 img(src="./svg/market/banner.svg" alt="icons") 
             ul.ind-market__content-l 
-                li.ind-market__content-i
+                li.ind-market__content-i.wow.fadeInUp(data-wow-delay="0.5s") 
                     .ind-market__content-p 
                         img(src="./img/market/img.png" alt="img")
                         .ind-market__content-promotion 
@@ -147,7 +152,7 @@ section.ind-market.display-n
                     .ind-market__content-descr 
                         h3 60 000₽ 
                         p До / день
-                li.ind-market__content-i
+                li.ind-market__content-i.wow.fadeInUp(data-wow-delay="0.6s") 
                     .ind-market__content-p 
                         img(src="./img/market/img.png" alt="img")
                         .ind-market__content-promotion 
@@ -162,7 +167,7 @@ section.ind-market.display-n
                     .ind-market__content-descr 
                         h3 60 000₽ 
                         p До / день
-                li.ind-market__content-i
+                li.ind-market__content-i.wow.fadeInUp(data-wow-delay="0.7s") 
                     .ind-market__content-p 
                         img(src="./img/market/img.png" alt="img")
                         .ind-market__content-promotion 
@@ -177,7 +182,7 @@ section.ind-market.display-n
                     .ind-market__content-descr 
                         h3 60 000₽ 
                         p До / день
-                li.ind-market__content-i
+                li.ind-market__content-i.wow.fadeInUp(data-wow-delay="0.8s") 
                     .ind-market__content-p 
                         img(src="./img/market/img.png" alt="img")
                         .ind-market__content-promotion 
@@ -196,10 +201,10 @@ section.ind-market.display-n
 a(name="tariff") 
 section.ind-tariff
     .containers 
-        .ind-tariff__content 
-            .ind-tariff__content-t Тарифы 
+        .ind-tariff__content.wow.fadeInDown(data-wow-delay="0.4s") 
+            .ind-tariff__content-t.wow.fadeInDown(data-wow-delay="0.5s") Тарифы 
             ul.ind-tariff__content-l 
-                li.ind-tariff__content-i 
+                li.ind-tariff__content-i.wow.fadeInUp(data-wow-delay="0.7s")
                     .ind-tariff__content-title НОВИЧОК:
                     .ind-tariff__content-p 
                         p от
@@ -229,24 +234,24 @@ section.ind-tariff
                             <path d="M14.43 5.92993L20.5 11.9999L14.43 18.0699" stroke="#E5F6FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M3.5 12H20.33" stroke="#E5F6FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                li.ind-tariff__content-i 
-                    .ind-tariff__content-title НОВИЧОК:
+                li.ind-tariff__content-i.wow.fadeInUp(data-wow-delay="0.9s")
+                    .ind-tariff__content-title СРЕДНИЙ:
                     .ind-tariff__content-p 
                         p от
-                            span 75₽
+                            span 50₽
                             | за 1 выкуп 
                     .ind-tariff__content-plus 
                         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="15" cy="15" r="14" stroke="#525666" stroke-width="2"/>
                             <path d="M7.5 15.25L12.1565 20.25L23.25 9" stroke="#525666" stroke-width="2"/>
                         </svg>
-                        p на 1 месяц
+                        p на 2 месяц
                     .ind-tariff__content-plus 
                         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="15" cy="15" r="14" stroke="#525666" stroke-width="2"/>
                             <path d="M7.5 15.25L12.1565 20.25L23.25 9" stroke="#525666" stroke-width="2"/>
                         </svg>
-                        p 50 выкупов
+                        p 500 выкупов
                     .ind-tariff__content-plus 
                         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="15" cy="15" r="14" stroke="#525666" stroke-width="2"/>
@@ -259,24 +264,24 @@ section.ind-tariff
                             <path d="M14.43 5.92993L20.5 11.9999L14.43 18.0699" stroke="#E5F6FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M3.5 12H20.33" stroke="#E5F6FF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                li.ind-tariff__content-i 
-                    .ind-tariff__content-title НОВИЧОК:
+                li.ind-tariff__content-i.wow.fadeInUp(data-wow-delay="1.1s")
+                    .ind-tariff__content-title Опытный:
                     .ind-tariff__content-p 
                         p от
-                            span 75₽
+                            span 25₽
                             | за 1 выкуп 
                     .ind-tariff__content-plus 
                         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="15" cy="15" r="14" stroke="#525666" stroke-width="2"/>
                             <path d="M7.5 15.25L12.1565 20.25L23.25 9" stroke="#525666" stroke-width="2"/>
                         </svg>
-                        p на 1 месяц
+                        p на 3 месяц
                     .ind-tariff__content-plus 
                         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="15" cy="15" r="14" stroke="#525666" stroke-width="2"/>
                             <path d="M7.5 15.25L12.1565 20.25L23.25 9" stroke="#525666" stroke-width="2"/>
                         </svg>
-                        p 50 выкупов
+                        p 5000 выкупов
                     .ind-tariff__content-plus 
                         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="15" cy="15" r="14" stroke="#525666" stroke-width="2"/>
@@ -291,23 +296,24 @@ section.ind-tariff
                         </svg>
 
 a(name="reviews")
-section.ind-reviews.display-n
+section.ind-reviews
     .containers 
-        .ind-reviews__content 
-            .ind-reviews__content-t Отзывы 
+        .ind-reviews__content.wow.fadeInDown(data-wow-delay="0.4s") 
+            .ind-reviews__content-t.wow.fadeInDown(data-wow-delay="0.5s") Отзывы 
             .ind-reviews__content-s 
                 .swiper.reviewsSlider
                     .swiper-wrapper
+
                         .swiper-slide
                             .ind-reviews__content-i 
-                                .ind-reviews__content-p 
+                                .ind-reviews__content-p.wow.fadeInUp(data-wow-delay="0.5s") 
                                     img(src="./img/reviews/photo.png" alt="img")
-                                .ind-reviews__content-c 
-                                    .ind-reviews__content-title
+                                .ind-reviews__content-c.wow.fadeInUp(data-wow-delay="0.6s") 
+                                    .ind-reviews__content-title.wow.fadeInUp(data-wow-delay="0.7s") 
                                         h3 Михаил Нимец
                                         p сфера деятельности:
                                             span  текстиль, ООО «Домашний текстиль»  
-                                    ul.ind-reviews__content-table
+                                    ul.ind-reviews__content-table.wow.fadeInUp(data-wow-delay="0.8s") 
                                         li.ind-reviews__content-e 
                                             h3 Заработок в найме
                                             p > 100 000 ₽/мес.
@@ -318,8 +324,8 @@ section.ind-reviews.display-n
                                             h3 Заработок на маркетплейсах с помощью сервиса:
                                             p > 400 000 ₽/мес.
 
-                                    .ind-reviews__content-add За это время Михаил:  
-                                    ul.ind-reviews__content-l
+                                    .ind-reviews__content-add.wow.fadeInUp(data-wow-delay="0.8s")  За это время Михаил:  
+                                    ul.ind-reviews__content-l.wow.fadeInUp(data-wow-delay="0.9s") 
                                         li.ind-reviews__content-g 
                                             img(src="./svg/reviews/check.svg" alt="icons")
                                             p заработал более 
@@ -335,14 +341,14 @@ section.ind-reviews.display-n
                                             p повысил средний чек 
                         .swiper-slide
                             .ind-reviews__content-i 
-                                .ind-reviews__content-p 
+                                .ind-reviews__content-p.wow.fadeInUp(data-wow-delay="0.5s") 
                                     img(src="./img/reviews/photo.png" alt="img")
-                                .ind-reviews__content-c 
-                                    .ind-reviews__content-title
+                                .ind-reviews__content-c.wow.fadeInUp(data-wow-delay="0.6s") 
+                                    .ind-reviews__content-title.wow.fadeInUp(data-wow-delay="0.7s") 
                                         h3 Михаил Нимец
                                         p сфера деятельности:
                                             span  текстиль, ООО «Домашний текстиль»  
-                                    ul.ind-reviews__content-table
+                                    ul.ind-reviews__content-table.wow.fadeInUp(data-wow-delay="0.8s") 
                                         li.ind-reviews__content-e 
                                             h3 Заработок в найме
                                             p > 100 000 ₽/мес.
@@ -353,8 +359,8 @@ section.ind-reviews.display-n
                                             h3 Заработок на маркетплейсах с помощью сервиса:
                                             p > 400 000 ₽/мес.
 
-                                    .ind-reviews__content-add За это время Михаил:  
-                                    ul.ind-reviews__content-l
+                                    .ind-reviews__content-add.wow.fadeInUp(data-wow-delay="0.8s")  За это время Михаил:  
+                                    ul.ind-reviews__content-l.wow.fadeInUp(data-wow-delay="0.9s") 
                                         li.ind-reviews__content-g 
                                             img(src="./svg/reviews/check.svg" alt="icons")
                                             p заработал более 
@@ -370,14 +376,14 @@ section.ind-reviews.display-n
                                             p повысил средний чек 
                         .swiper-slide
                             .ind-reviews__content-i 
-                                .ind-reviews__content-p 
+                                .ind-reviews__content-p.wow.fadeInUp(data-wow-delay="0.5s") 
                                     img(src="./img/reviews/photo.png" alt="img")
-                                .ind-reviews__content-c 
-                                    .ind-reviews__content-title
+                                .ind-reviews__content-c.wow.fadeInUp(data-wow-delay="0.6s") 
+                                    .ind-reviews__content-title.wow.fadeInUp(data-wow-delay="0.7s") 
                                         h3 Михаил Нимец
                                         p сфера деятельности:
                                             span  текстиль, ООО «Домашний текстиль»  
-                                    ul.ind-reviews__content-table
+                                    ul.ind-reviews__content-table.wow.fadeInUp(data-wow-delay="0.8s") 
                                         li.ind-reviews__content-e 
                                             h3 Заработок в найме
                                             p > 100 000 ₽/мес.
@@ -388,8 +394,8 @@ section.ind-reviews.display-n
                                             h3 Заработок на маркетплейсах с помощью сервиса:
                                             p > 400 000 ₽/мес.
 
-                                    .ind-reviews__content-add За это время Михаил:  
-                                    ul.ind-reviews__content-l
+                                    .ind-reviews__content-add.wow.fadeInUp(data-wow-delay="0.8s")  За это время Михаил:  
+                                    ul.ind-reviews__content-l.wow.fadeInUp(data-wow-delay="0.9s") 
                                         li.ind-reviews__content-g 
                                             img(src="./svg/reviews/check.svg" alt="icons")
                                             p заработал более 
@@ -405,14 +411,14 @@ section.ind-reviews.display-n
                                             p повысил средний чек 
                         .swiper-slide
                             .ind-reviews__content-i 
-                                .ind-reviews__content-p 
+                                .ind-reviews__content-p.wow.fadeInUp(data-wow-delay="0.5s") 
                                     img(src="./img/reviews/photo.png" alt="img")
-                                .ind-reviews__content-c 
-                                    .ind-reviews__content-title
+                                .ind-reviews__content-c.wow.fadeInUp(data-wow-delay="0.6s") 
+                                    .ind-reviews__content-title.wow.fadeInUp(data-wow-delay="0.7s") 
                                         h3 Михаил Нимец
                                         p сфера деятельности:
                                             span  текстиль, ООО «Домашний текстиль»  
-                                    ul.ind-reviews__content-table
+                                    ul.ind-reviews__content-table.wow.fadeInUp(data-wow-delay="0.8s") 
                                         li.ind-reviews__content-e 
                                             h3 Заработок в найме
                                             p > 100 000 ₽/мес.
@@ -423,8 +429,8 @@ section.ind-reviews.display-n
                                             h3 Заработок на маркетплейсах с помощью сервиса:
                                             p > 400 000 ₽/мес.
 
-                                    .ind-reviews__content-add За это время Михаил:  
-                                    ul.ind-reviews__content-l
+                                    .ind-reviews__content-add.wow.fadeInUp(data-wow-delay="0.8s")  За это время Михаил:  
+                                    ul.ind-reviews__content-l.wow.fadeInUp(data-wow-delay="0.9s") 
                                         li.ind-reviews__content-g 
                                             img(src="./svg/reviews/check.svg" alt="icons")
                                             p заработал более 
@@ -438,54 +444,54 @@ section.ind-reviews.display-n
                                         li.ind-reviews__content-g 
                                             img(src="./svg/reviews/check.svg" alt="icons")
                                             p повысил средний чек 
+                        
 
-
-                .swiper-controls 
+                .swiper-controls
                     .swiper-button-next
                     .swiper-button-prev
                     .swiper-pagination
 
 section.ind-banner
     .containers 
-        .ind-banner__content
-            .ind-banner__content-t Хочешь стать ТОПовым продавцом на маркетплейсах России? подключи togotop.ru 
-            .ind-banner__content-d Весь функционал абсолютно бесплатно на 3 дня
-            a(href="#").ind-banner__content-b
+        .ind-banner__content.wow.fadeInDown(data-wow-delay="0.4s")
+            .ind-banner__content-t.wow.fadeInUp(data-wow-delay="0.6s") Хочешь стать ТОПовым продавцом на маркетплейсах России? подключи togotop.ru 
+            .ind-banner__content-d.wow.fadeInUp(data-wow-delay="0.7s") Весь функционал абсолютно бесплатно на 3 дня
+            a(href="#").ind-banner__content-b.wow.fadeInUp(data-wow-delay="0.8s")
                 p Попробовать  
                 img(src="./svg/banner/arrow.svg" alt="icons")
 
 section.ind-question
     .containers 
-        .ind-question__content 
-            .ind-question__content-t Вопросы и ответы
-            .ind-question__content-d 
+        .ind-question__content.wow.fadeInDown(data-wow-delay="0.4s")
+            .ind-question__content-t.wow.fadeInDown(data-wow-delay="0.5s") Вопросы и ответы
+            .ind-question__content-d.wow.fadeInUp(data-wow-delay="0.7s")
                 img(src="./svg/question/banner.svg" alt="icons")
             ul.ind-question__content-l
-                li.ind-question__content-i 
+                li.ind-question__content-i.wow.fadeInUp(data-wow-delay="0.6s") 
                     .ind-question__content-c 
                         h3 Я могу и сам выйти на маркетплейс, зачем вы мне нужны?
                         img(src="./svg/question/plus.svg" alt="icons")
                     .ind-question__content-line 
                     .ind-question__content-text.question-hide У разных маркетплейсов разные требования. Мы вывели 3000+ продавцов за 2,5 года работы и знаем точно как пройти модерацию. Не теряйте время на изучение материалов, начните продавать скорее с нами.
-                li.ind-question__content-i 
+                li.ind-question__content-i.wow.fadeInUp(data-wow-delay="0.7s")
                     .ind-question__content-c 
                         h3 Я могу и сам выйти на маркетплейс, зачем вы мне нужны?
                         img(src="./svg/question/plus.svg" alt="icons")
                     .ind-question__content-line 
                     .ind-question__content-text.question-hide У разных маркетплейсов разные требования. Мы вывели 3000+ продавцов за 2,5 года работы и знаем точно как пройти модерацию. Не теряйте время на изучение материалов, начните продавать скорее с нами.
-                li.ind-question__content-i 
+                li.ind-question__content-i.wow.fadeInUp(data-wow-delay="0.8s")
                     .ind-question__content-c 
                         h3 Я могу и сам выйти на маркетплейс, зачем вы мне нужны?
                         img(src="./svg/question/plus.svg" alt="icons")
                     .ind-question__content-line 
                     .ind-question__content-text.question-hide У разных маркетплейсов разные требования. Мы вывели 3000+ продавцов за 2,5 года работы и знаем точно как пройти модерацию. Не теряйте время на изучение материалов, начните продавать скорее с нами.
-                li.ind-question__content-i 
+                li.ind-question__content-i.wow.fadeInUp(data-wow-delay="0.9s")
                     .ind-question__content-c 
                         h3 Я могу и сам выйти на маркетплейс, зачем вы мне нужны?
                         img(src="./svg/question/plus.svg" alt="icons")
                     .ind-question__content-line 
                     .ind-question__content-text.question-hide У разных маркетплейсов разные требования. Мы вывели 3000+ продавцов за 2,5 года работы и знаем точно как пройти модерацию. Не теряйте время на изучение материалов, начните продавать скорее с нами.
-                li.ind-question__content-i 
+                li.ind-question__content-i.wow.fadeInUp(data-wow-delay="1s")
                     .ind-question__content-c 
                         h3 Я могу и сам выйти на маркетплейс, зачем вы мне нужны?
                         img(src="./svg/question/plus.svg" alt="icons")

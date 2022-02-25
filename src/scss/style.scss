@@ -106,7 +106,7 @@ h6 {
 	&__logo {
 		cursor: pointer;
 		& img {
-			width: 214px;
+			width: 190px;
 		}
 	}
 	&__list {
@@ -147,6 +147,15 @@ h6 {
 		text-align: center;
 		border-radius: 40px;
 		background: transparent;
+		transition: all 0.5s ease;
+		&:hover {
+			background: #000;
+			transition: all 0.5s ease;
+			& p {
+				transition: all 0.5s ease;
+				color: #fff;
+			}
+		}
 		& p {
 			font-family: TTNorms;
 			font-style: normal;
@@ -155,6 +164,7 @@ h6 {
 			line-height: 19px;
 			text-align: center;
 			color: #000000;
+			transition: all 0.5s ease;
 		}
 	}
 	&__enter {

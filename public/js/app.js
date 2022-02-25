@@ -77,6 +77,10 @@ $(function () {
     $('.preloading').css('display', 'none');
     $('body').css('overflow', 'visible');
   }, 3500);
+
+  if (window.innerWidth <= 800) {
+    $('.animated').removeClass('animated');
+  }
 }) // overflow: hidden;
 // 	overflow: visible;
 ;

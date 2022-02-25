@@ -31,7 +31,7 @@
 			position: absolute;
 			width: 25px;
 			height: 25px;
-			top: 0;
+			top: 35px;
 			left: 0;
 			background: url("./../svg/headers/decor-1.svg") no-repeat;
 		}
@@ -98,14 +98,28 @@
 			gap: 13px;
 			cursor: pointer;
 			margin: 0 20px 0 0;
+			transition: all 0.5s ease;
+			&:hover {
+				background: #4f6bfd;
+				transition: all 0.5s ease;
+				& p {
+					color: #fff;
+					transition: all 0.5s ease;
+				}
+				& svg path {
+					stroke: #fff;
+					transition: all 0.5s ease;
+				}
+			}
 			& p {
-				font-family: TT Norms;
+				font-family: TTNorms;
 				font-style: normal;
 				font-weight: 500;
 				font-size: 18px;
 				line-height: 120%;
 				letter-spacing: 0.02em;
 				color: #4f6bfd;
+				transition: all 0.5s ease;
 			}
 		}
 		&-wb {
@@ -158,7 +172,7 @@
 				color: #161616;
 			}
 			& p {
-				font-family: TT Norms;
+				font-family: TTNorms;
 				font-style: normal;
 				font-weight: normal;
 				font-size: 15px;
@@ -211,21 +225,22 @@
 	background: #fcf7f7;
 	padding: 125px 0 134px 0;
 	position: relative;
-	&::after {
-		content: "";
-		position: absolute;
-		top: 56px;
-		left: 50%;
-		transform: translate(-50%, 0%);
-		width: 25px;
-		height: 25px;
-		background: url("./../svg/service/decor-1.svg") no-repeat;
-	}
 	&__containers {
 		max-width: 1440px;
 		padding: 0 77px;
 		margin: 0 auto;
 		width: 100%;
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			top: -56px;
+			left: 50%;
+			transform: translate(-50%, 0%);
+			width: 25px;
+			height: 25px;
+			background: url("./../svg/service/decor-1.svg") no-repeat;
+		}
 	}
 	&__content {
 		display: flex;
@@ -497,7 +512,7 @@
 				left: 0;
 				transform: translate(0%, -30%);
 				& .ind-work__content-title {
-					font-family: TT Norms;
+					font-family: TTNorms;
 					font-style: normal;
 					font-weight: 500;
 					font-size: 22px;
@@ -526,7 +541,7 @@
 			}
 			&:nth-child(2) {
 				& .ind-work__content-title {
-					font-family: TT Norms;
+					font-family: TTNorms;
 					font-style: normal;
 					font-weight: 500;
 					font-size: 22px;
@@ -555,7 +570,7 @@
 			}
 			&:nth-child(3) {
 				& .ind-work__content-title {
-					font-family: TT Norms;
+					font-family: TTNorms;
 					font-style: normal;
 					font-weight: 500;
 					font-size: 22px;
@@ -585,7 +600,7 @@
 		}
 		&-text {
 			margin: 11px 0 0 0;
-			font-family: TT Norms;
+			font-family: TTNorms;
 			font-style: normal;
 			font-weight: 500;
 			font-size: 16px;
@@ -661,10 +676,14 @@
 			&:nth-child(1) {
 				position: absolute;
 				top: 235px;
-				opacity: 0.4;
+				opacity: 0.4 !important;
 				left: -164px;
+				background: #7C7C7C;
 				& .ind-market__content-descr {
 					display: none;
+				}
+				& .ind-market__content-p {
+					border: 16px solid #7C7C7C;
 				}
 			}
 			&:nth-child(2) {
@@ -926,7 +945,7 @@
 		&-p {
 			margin: 34px 0 0 0;
 			& p {
-				font-family: TT Norms;
+				font-family: TTNorms;
 				font-style: normal;
 				font-weight: normal;
 				font-size: 30px;
@@ -935,7 +954,7 @@
 				color: #000000;
 				transition: all 0.5s ease;
 				& span {
-					font-family: TT Norms;
+					font-family: TTNorms;
 					font-style: normal;
 					font-weight: bold;
 					font-size: 30px;
@@ -969,7 +988,7 @@
 			justify-content: flex-start;
 			gap: 20px;
 			& p {
-				font-family: TT Norms;
+				font-family: TTNorms;
 				font-style: normal;
 				font-weight: normal;
 				font-size: 20px;
@@ -991,7 +1010,7 @@
 			cursor: pointer;
 			margin: 35px 0 0 0;
 			& p {
-				font-family: TT Norms;
+				font-family: TTNorms;
 				font-style: normal;
 				font-weight: 500;
 				font-size: 18px;
@@ -1044,7 +1063,7 @@
 		}
 		&-d {
 			margin: 40px auto 0 auto;
-			font-family: TT Norms;
+			font-family: TTNorms;
 			font-style: normal;
 			font-weight: normal;
 			font-size: 20px;
@@ -1063,7 +1082,7 @@
 			gap: 13px;
 			cursor: pointer;
 			& p {
-				font-family: TT Norms;
+				font-family: TTNorms;
 				font-style: normal;
 				font-weight: 500;
 				font-size: 18px;
@@ -1132,7 +1151,7 @@
 			cursor: pointer;
 			& h3 {
 				width: 95%;
-				font-family: TT Norms;
+				font-family: TTNorms;
 				font-style: normal;
 				font-weight: bold;
 				font-size: 24px;
@@ -1151,7 +1170,7 @@
 		}
 		&-text {
 			margin: 60px 0 10px 0;
-			font-family: TT Norms;
+			font-family: TTNorms;
 			font-style: normal;
 			font-weight: 500;
 			transition: all 0.5s ease;
@@ -1277,7 +1296,7 @@
 			justify-content: space-between;
 			width: 100%;
 			& h3 {
-				font-family: TT Norms;
+				font-family: TTNorms;
 				font-style: normal;
 				font-weight: bold;
 				font-size: 30px;
@@ -1285,14 +1304,14 @@
 				color: #000000;
 			}
 			& p {
-				font-family: TT Norms;
+				font-family: TTNorms;
 				font-style: normal;
 				font-weight: normal;
 				font-size: 17px;
 				line-height: 20px;
 				color: #000000;
 				& span {
-					font-family: TT Norms;
+					font-family: TTNorms;
 					font-style: normal;
 					font-weight: 500;
 					font-size: 17px;
