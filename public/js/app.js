@@ -19,4 +19,18 @@ $(function () {
     _loop(i);
   }
 });
+var reviewsSlider = new Swiper(".reviewsSlider", {
+  navigation: {
+    nextEl: ".ind-reviews__content-s .swiper-controls .swiper-button-next",
+    prevEl: ".ind-reviews__content-s .swiper-controls .swiper-button-prev"
+  },
+  pagination: {
+    el: ".ind-reviews__content-s .swiper-controls .swiper-pagination"
+  },
+  keyboard: true,
+  effect: "fade",
+  fadeEffect: {
+    crossFade: true
+  }
+});
 ;
