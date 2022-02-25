@@ -634,7 +634,7 @@ h6 {
 }
 
 .ind-header__items-i {
-	font-family : TT Norms;
+	font-family : TTNorms;
 	font-style : normal;
 	font-weight : normal;
 	font-size : 18px;
@@ -675,7 +675,7 @@ h6 {
 }
 
 .ind-header__start p {
-	font-family : TT Norms;
+	font-family : TTNorms;
 	font-style : normal;
 	font-weight : 500;
 	font-size : 16px;
@@ -690,7 +690,7 @@ h6 {
 }
 
 .ind-header__enter p {
-	font-family : TT Norms;
+	font-family : TTNorms;
 	font-style : normal;
 	font-weight : normal;
 	font-size : 16px;
@@ -733,7 +733,7 @@ h6 {
 
 .ind-footer__content-t {
 	width : 788px;
-	font-family : TT Norms;
+	font-family : TTNorms;
 	font-style : normal;
 	font-weight : normal;
 	font-size : 14px;
@@ -803,7 +803,7 @@ h6 {
 }
 
 .ind-footer__content-year {
-	font-family : TT Norms;
+	font-family : TTNorms;
 	font-style : normal;
 	font-weight : 500;
 	font-size : 14px;
@@ -812,7 +812,7 @@ h6 {
 }
 
 .ind-footer__content-create {
-	font-family : TT Norms;
+	font-family : TTNorms;
 	font-style : normal;
 	font-weight : 500;
 	font-size : 14px;
@@ -822,7 +822,7 @@ h6 {
 }
 
 .ind-footer__content-create a {
-	font-family : TT Norms;
+	font-family : TTNorms;
 	font-style : normal;
 	font-weight : 500;
 	font-size : 14px;
@@ -846,7 +846,7 @@ h6 {
 }
 
 .ind-footer__content-path a {
-	font-family : TT Norms;
+	font-family : TTNorms;
 	font-style : normal;
 	font-weight : normal;
 	font-size : 18px;
@@ -3285,7 +3285,7 @@ h6 {
 
 	.ind-question__content-c h3 {
 		width : 95%;
-		font-family : TT Norms;
+		font-family : TTNorms;
 		font-style : normal;
 		font-weight : bold;
 		font-size : 20px;
@@ -3295,7 +3295,7 @@ h6 {
 
 	.ind-question__content-text {
 		margin : 30px 0 10px 0;
-		font-family : TT Norms;
+		font-family : TTNorms;
 		font-style : normal;
 		font-weight : 500;
 		-webkit-transition : all 0.5s ease;
@@ -3365,7 +3365,7 @@ h6 {
 	}
 
 	.ind-headers__content-b p {
-		font-family : TT Norms;
+		font-family : TTNorms;
 		font-style : normal;
 		font-weight : 500;
 		font-size : 16px;
@@ -3401,7 +3401,7 @@ h6 {
 	}
 
 	.ind-tariff__content-btn p {
-		font-family : TT Norms;
+		font-family : TTNorms;
 		font-style : normal;
 		font-weight : 500;
 		font-size : 15px;
@@ -3415,7 +3415,7 @@ h6 {
 
 	.ind-question__content-c h3 {
 		width : 95%;
-		font-family : TT Norms;
+		font-family : TTNorms;
 		font-style : normal;
 		font-weight : bold;
 		font-size : 18px;
