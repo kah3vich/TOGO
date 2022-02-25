@@ -5,13 +5,17 @@
 
 
 section.ind-headers
+    .preloading
+        .preloading__start
+        .preloading__state
+            img(src="./img/footer-logo.png", alt="icons")
     @@include('components/_header.pug')
     .containers 
-        .ind-headers__wrapper 
+        .ind-headers__wrapper.wow.fadeInUp(data-wow-delay="3.3s")
             .ind-headers__content 
-                .ind-headers__content-t С нами твои товары всегда будут в топе
-                .ind-headers__content-d Продвигай свои товары на Wildberries и Ozon за пару кликов 
-                .ind-headers__content-btns 
+                .ind-headers__content-t.wow.fadeInUp(data-wow-delay="3.4s") С нами твои товары всегда будут в топе
+                .ind-headers__content-d.wow.fadeInUp(data-wow-delay="3.5s") Продвигай свои товары на Wildberries и Ozon за пару кликов 
+                .ind-headers__content-btns.wow.fadeInUp(data-wow-delay="3.6s") 
                     a(href="#").ind-headers__content-b
                         p Попробовать бесплатно
                         img(src="./svg/headers/arrow-right.svg" alt="icons")
@@ -21,19 +25,21 @@ section.ind-headers
                     a(href="#").ind-headers__content-ozon 
                         img(src="./img/headers/ozon.png" alt="icons")  
                         p Ozon
-                ul.ind-headers__content-l 
+                ul.ind-headers__content-l.wow.fadeInUp(data-wow-delay="3.7s")
                     li.ind-headers__content-i 
                         h3 5 127
                         p Зарегистрировались на сервисе
                     li.ind-headers__content-ln
                     li.ind-headers__content-i 
                         h3 18 678
-                        p Сделанных выкупов
+                        p Сделанных 
+                            br
+                            | выкупов
                     li.ind-headers__content-ln
                     li.ind-headers__content-i 
                         h3 12 432
                         p Оставленных отзывов
-            .ind-headers__banner
+            .ind-headers__banner.wow.fadeInRight(data-wow-delay="3.6s")
                 ul.ind-headers__banner-d 
                     li.ind-headers__banner-i 
                     li.ind-headers__banner-i 

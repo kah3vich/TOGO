@@ -1,23 +1,27 @@
+var wow = new WOW({
+	mobile: false, 
+});
+wow.init();
 
-	for (let i = 1; i <= $(".ind-question__content-i").length; i++) {
-		$(`.ind-question__content-i:nth-child(${i})`).on("click", () => {
-			if ($(`.ind-question__content-i:nth-child(${i})`).hasClass("ind-question__content-i-a")) {
-				$(`.ind-question__content-i:nth-child(${i})`).removeClass(
-					"ind-question__content-i-a"
-				);
-				$(`.ind-question__content-i:nth-child(${i}) img`).css("transform", "rotate(0deg)");
-				$(`.ind-question__content-i:nth-child(${i}) .ind-question__content-text`).addClass(
-					"question-hide"
-				);
-			} else {
-				$(`.ind-question__content-i:nth-child(${i})`).addClass("ind-question__content-i-a");
-				$(`.ind-question__content-i:nth-child(${i}) img`).css("transform", "rotate(45deg)");
-				$(
-					`.ind-question__content-i:nth-child(${i}) .ind-question__content-text`
-				).removeClass("question-hide");
-			}
-		});
-	}
+for (let i = 1; i <= $(".ind-question__content-i").length; i++) {
+	$(`.ind-question__content-i:nth-child(${i})`).on("click", () => {
+		if ($(`.ind-question__content-i:nth-child(${i})`).hasClass("ind-question__content-i-a")) {
+			$(`.ind-question__content-i:nth-child(${i})`).removeClass(
+				"ind-question__content-i-a"
+			);
+			$(`.ind-question__content-i:nth-child(${i}) img`).css("transform", "rotate(0deg)");
+			$(`.ind-question__content-i:nth-child(${i}) .ind-question__content-text`).addClass(
+				"question-hide"
+			);
+		} else {
+			$(`.ind-question__content-i:nth-child(${i})`).addClass("ind-question__content-i-a");
+			$(`.ind-question__content-i:nth-child(${i}) img`).css("transform", "rotate(45deg)");
+			$(
+				`.ind-question__content-i:nth-child(${i}) .ind-question__content-text`
+			).removeClass("question-hide");
+		}
+	});
+}
 
 var reviewsSlider = new Swiper(".reviewsSlider", {
 	navigation: {
@@ -62,3 +66,24 @@ var indexService = new Swiper(".indexService", {
     }
 });
 
+$(() => {
+	$('body').css('overflow', 'hidden')
+	gsap.to('.preloading__state', 2, {
+		delay: 1,
+		top: '-100%',
+		ease: Expo.easeInOut,
+	})
+	gsap.to('.preloading__start', 2, {
+		delay: 1.5,
+		top: '-100%',
+		ease: Expo.easeInOut,
+	})
+	setTimeout(() => {
+		$('.preloading').css('display', 'none')
+		$('body').css('overflow', 'visible')
+	}, 3500)
+})
+
+
+// overflow: hidden;
+// 	overflow: visible;

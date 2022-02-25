@@ -1,5 +1,10 @@
 "use strict";
 
+var wow = new WOW({
+  mobile: false
+});
+wow.init();
+
 var _loop = function _loop(i) {
   $(".ind-question__content-i:nth-child(".concat(i, ")")).on("click", function () {
     if ($(".ind-question__content-i:nth-child(".concat(i, ")")).hasClass("ind-question__content-i-a")) {
@@ -56,4 +61,22 @@ var indexService = new Swiper(".indexService", {
     }
   }
 });
+$(function () {
+  $('body').css('overflow', 'hidden');
+  gsap.to('.preloading__state', 2, {
+    delay: 1,
+    top: '-100%',
+    ease: Expo.easeInOut
+  });
+  gsap.to('.preloading__start', 2, {
+    delay: 1.5,
+    top: '-100%',
+    ease: Expo.easeInOut
+  });
+  setTimeout(function () {
+    $('.preloading').css('display', 'none');
+    $('body').css('overflow', 'visible');
+  }, 3500);
+}) // overflow: hidden;
+// 	overflow: visible;
 ;
