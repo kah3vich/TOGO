@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="shortcut icon" href="img/icons-1.ico" type="image/x-icon" id="rotateIcon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css?_v=20220226171023" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.0/animate.min.css?_v=20220226171023">
+  <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js?_v=20220226171023"> </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js?_v=20220226171023" integrity="sha512-gWlyRVDsJvp5kesJt4cSdPPLZIBdln/uSwzYgUicQcbTgRNQE4QhP5KUBIYlLYLkiKIQiuD7KUMHzqGNW/D2bQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js?_v=20220226171023" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js?_v=20220226171023"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.4/swiper-bundle.min.css?_v=20220226171023" integrity="sha512-V5B6OaBftIs7Kx8BBx7n2W42FpHP7MiXmDaKWTBdCsnStyS3gVYuA30kG6oABmh8uayFJDsfl2hCywak1eKE2w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.4/swiper-bundle.min.js?_v=20220226171023" integrity="sha512-ztZ7m9gYJmuwemu0TmAp9QDuhFhOYbbIoN6iIKMi5ay88l8U5tkt5OOlA/fP8DI/p/OphEY7QIbuoDQKpVvf7w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="css/style.min.css?_v=20220226171023">
+</html>
+<body></body>
+<div class="reg">   
+  <div class="reg__banner"> <a class="reg__banner-logo" href="/"> <picture><source srcset="./img/footer-logo.webp" type="image/webp"><img src="./img/footer-logo.png" alt="logo"></picture></a>
+    <div class="reg__banner-img"> <img src="./svg/form/banner.svg" alt="banner"></div>
+  </div>
+  <div class="reg__form"> 
+    <div class="reg__form-nav"> <a class="reg__form-back" href="index.html"> <img src="./svg/form/arrow-back.svg" alt="icons">
+        <p>Вернуться на сайт</p></a><a class="reg__form-signin" href="signin.html">У вас уже есть аккаунт? <span>Войти</span></a></div>
+    <div class="reg__form-wrapper"> 
+      <div class="reg__form-title">Регистрация</div>
+      <div class="reg__form-line"> </div>
+      <div class="reg__form-name"> 
+        <label for="reg__name">Ваше имя*</label>
+        <input type="text" id="reg__name" placeholder="Ваше имя" require>
+      </div>
+      <div class="reg__form-email"> 
+        <label for="reg__email">Email адресс* </label>
+        <input type="text" id="reg__email" placeholder="Email адрес" require>
+      </div>
+      <div class="reg__form-phone"> 
+        <label for="reg__phone">Номер телефона*</label>
+        <input type="text" id="reg__phone" placeholder="Номер телефона" require maxlength="11">
+      </div>
+      <div class="reg__form-password"> 
+        <label for="reg__password">Придумайте пароль*</label>
+        <input type="password" id="reg__password" placeholder="Придумайте пароль" require>
+        <div class="reg-controls-password">Показать пароль</div>
+      </div>
+      <div class="reg__form-passwords"> 
+        <label for="reg__passwords">Подтвердите пароль*</label>
+        <input type="password" id="reg__passwords" placeholder="Подтвердите пароль" require>
+        <div class="reg-controls-passwords">Показать пароль</div>
+      </div>
+      <div class="reg__form-checked"> 
+        <input class="reg__form-checkbox__input" type="checkbox" id="reg__checked" checked>
+        <label class="reg__form-checkbox__label" for="reg__checked">Я согласен с условиями</label>
+      </div>
+      <button class="reg__form-btn" type="submit" disabled="disabled"> 
+        <p>Зарегистрироваться </p>
+      </button>
+    </div>
+  </div>
+</div>
+<script type="module" src="js/webpack.min.js?_v=20220226171023"></script>

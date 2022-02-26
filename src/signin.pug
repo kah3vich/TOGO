@@ -1,0 +1,36 @@
+@@include('components/_head.pug', {
+    "title": "Войти",
+})
+
+.signin    
+    .signin__banner 
+        a(href="/").signin__banner-logo 
+            img(src="./img/footer-logo.png" alt="logo")
+        .signin__banner-img 
+            img(src="./svg/form/banner.svg" alt="banner")
+    .signin__form 
+        .signin__form-nav 
+            a(href="index.html").signin__form-back 
+                img(src="./svg/form/arrow-back.svg" alt="icons")
+                p Вернуться на сайт
+            a(href="reg.html").signin__form-signin У вас нету аккаунт? 
+                span Зарегистрироваться
+        .signin__form-wrapper 
+            .signin__form-title Войти
+            .signin__form-line 
+            .signin__form-email 
+                label(for="signin__email") Email адресс*
+                input(type="text" id='signin__email' placeholder="Email адрес" require)
+            .signin__form-phone 
+                label(for="signin__phone") Номер телефона*
+                input(type="text" id='signin__phone' placeholder="Номер телефона" require maxlength='11')
+            .signin__form-password 
+                label(for="signin__password") Введите пароль*
+                input(type="password" id='signin__password' placeholder="Введите пароль" require)
+                .signin-controls-password Показать пароль
+            a(href="reset.html").signin__form-reset Забыли пароль ?
+            button(type="submit" disabled="disabled").signin__form-btn 
+                p Войти 
+
+
+@@include('components/_script.pug')

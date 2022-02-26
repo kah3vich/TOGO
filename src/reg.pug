@@ -1,0 +1,45 @@
+@@include('components/_head.pug', {
+    "title": "Регистрация",
+})
+
+.reg    
+    .reg__banner 
+        a(href="/").reg__banner-logo 
+            img(src="./img/footer-logo.png" alt="logo")
+        .reg__banner-img 
+            img(src="./svg/form/banner.svg" alt="banner")
+    .reg__form 
+        .reg__form-nav 
+            a(href="index.html").reg__form-back 
+                img(src="./svg/form/arrow-back.svg" alt="icons")
+                p Вернуться на сайт
+            a(href="signin.html").reg__form-signin У вас уже есть аккаунт? 
+                span Войти
+        .reg__form-wrapper 
+            .reg__form-title Регистрация
+            .reg__form-line 
+            .reg__form-name 
+                label(for="reg__name") Ваше имя*
+                input(type="text" id='reg__name' placeholder="Ваше имя" require)
+            .reg__form-email 
+                label(for="reg__email") Email адресс* 
+                input(type="text" id='reg__email' placeholder="Email адрес" require)
+            .reg__form-phone 
+                label(for="reg__phone") Номер телефона*
+                input(type="text" id='reg__phone' placeholder="Номер телефона" require maxlength='11')
+            .reg__form-password 
+                label(for="reg__password") Придумайте пароль*
+                input(type="password" id='reg__password' placeholder="Придумайте пароль" require)
+                .reg-controls-password Показать пароль
+            .reg__form-passwords 
+                label(for="reg__passwords") Подтвердите пароль*
+                input(type="password" id='reg__passwords' placeholder="Подтвердите пароль" require)
+                .reg-controls-passwords Показать пароль
+            .reg__form-checked 
+                input(class="reg__form-checkbox__input" type="checkbox" id="reg__checked" checked)
+                label(class="reg__form-checkbox__label" for="reg__checked") Я согласен с условиями
+            button(type="submit" disabled="disabled").reg__form-btn 
+                p Зарегистрироваться 
+
+
+@@include('components/_script.pug')
