@@ -88,7 +88,7 @@
 	.ind-market__content-l {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		gap: 166px 42px;
+		// gap: 166px 42px;
 		margin: 50px 0 0 0;
 		justify-items: center;
 		grid-auto-flow: dense;
@@ -107,7 +107,7 @@
 		// }
 	}
 	.ind-market__content-i:nth-child(2) {
-		margin: 0;
+		margin: 0 0 166px 0;
 		// background: #4f6bfd;
 		// & .ind-market__content-descr {
 		// 	display: none;
@@ -124,7 +124,7 @@
 		// }
 	}
 	.ind-market__content-i:nth-child(3) {
-		margin: 0;
+		margin: 0 0 166px 0;
 		// background: #4f6bfd;
 		// & .ind-market__content-descr {
 		// 	display: none;
@@ -144,7 +144,7 @@
 		// }
 	}
 	.ind-market__content-i:nth-child(4) {
-		margin: 0;
+		margin: 100px 0 166px 0;
 		// background: #4f6bfd;
 		// & .ind-market__content-descr {
 		// 	display: none;
@@ -162,6 +162,15 @@
 		// & .ind-market__content-descr {
 		// 	display: none;
 		// }
+	}
+	.ind-market {
+		background: #fcf7f7;
+		width: 100%;
+		padding: 130px 0 50px 0;
+	}
+	.ind-market__content {
+		position: relative;
+		padding: 0 0 0 0;
 	}
 }
 @media (max-width: 1350px) {
@@ -234,6 +243,9 @@
 	.ind-headers .containers {
 		padding: 0 60px;
 	}
+	.error .containers {
+		padding: 0 60px;
+	}
 	.ind-tariff .containers {
 		padding: 0 60px;
 	}
@@ -287,6 +299,7 @@
 	}
 	.ind-header__start {
 		padding: 10px 30px;
+		margin: 0 0 0 30px;
 	}
 	.ind-footer__content-path {
 		gap: 10px;
@@ -362,10 +375,9 @@
 }
 @media (max-width: 800px) {
 	.ind-reviews__content-l {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: flex-start;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 15px;
 	}
 	.ind-reviews__content-table {
 		grid-template-columns: repeat(2, 1fr);
@@ -424,6 +436,9 @@
 	.ind-tariff .containers {
 		padding: 0 30px;
 	}
+	.error .containers {
+		padding: 0 30px;
+	}
 	.ind-market .containers {
 		padding: 0 30px;
 	}
@@ -474,6 +489,13 @@
 @media (max-width: 600px) {
 	.ind-headers__content-t {
 		width: 470px;
+	}
+	.error__content-d {
+		width: 100%;
+	}
+	.error__content {
+		width: 100%;
+		padding: 0 30px;
 	}
 	.ind-reviews__content-e:nth-child(1) {
 		& h3 {
@@ -533,6 +555,17 @@
 		text-align: center;
 		color: #ffffff;
 		position: relative;
+	}
+	.ind-market__content-d-i {
+		display: none;
+	}
+	.ind-market__content-d {
+		position: absolute;
+		top: 62px;
+		right: -30px;
+	}
+	.ind-market__content-d-m {
+		display: block;
 	}
 	.ind-work__content-l {
 		margin: 270px 0 0 0;
@@ -702,3 +735,5 @@
 		left: 6px;
 	}
 }
+
+

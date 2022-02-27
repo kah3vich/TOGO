@@ -1,0 +1,17 @@
+@@include('components/_head.pug', {
+    "title": "Главная",
+})
+
+
+
+section.error
+    @@include('components/_header.pug')
+    .containers 
+        .error__content 
+            .error__content-title 404
+            .error__content-d Кажется что-то пошло не так! Страница, которую вы запрашиваете, не существует. Возможно она устарела, была удалена, или был введен неверный адрес в адресной строке.
+            a(href="index.html").error__content-btn 
+                p Вернуться на сайт
+                img(src="./svg/404/arrow.svg", alt="icons")
+
+@@include('components/_script.pug')

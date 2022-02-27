@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Восстановление пароля</title>
+    <title>Главная</title>
     <link rel="shortcut icon" href="img/icons-1.ico" type="image/x-icon" id="rotateIcon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css?_v=20220227123325" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
   </head>
@@ -17,24 +17,32 @@
   <link rel="stylesheet" href="css/style.min.css?_v=20220227123325">
 </html>
 <body></body>
-<div class="reset">   
-  <div class="reset__banner"> <a class="reset__banner-logo" href="/"> <picture><source srcset="./img/footer-logo.webp" type="image/webp"><img src="./img/footer-logo.png" alt="logo"></picture></a>
-    <div class="reset__banner-img"> <img src="./svg/form/banner.svg" alt="banner"></div>
-  </div>
-  <div class="reset__form"> 
-    <div class="reset__form-nav"> <a class="reset__form-back" href="index.html"> <img src="./svg/form/arrow-back.svg" alt="icons">
-        <p>Вернуться на сайт</p></a><a class="reset__form-signin" href="signin.html">У вас уже есть аккаунт? <span>Войти</span></a></div>
-    <div class="reset__form-wrapper"> 
-      <div class="reset__form-title">Восстановление пароля</div>
-      <div class="reset__form-line"> </div>
-      <div class="reset__form-email"> 
-        <label for="reset__email">Email адрес* </label>
-        <input type="text" id="reset__email" placeholder="Email адрес" require>
-      </div>
-      <button class="reset__form-btn" type="submit" disabled="disabled"> 
-        <p>Восстановить </p>
-      </button>
+<section class="error">
+  <header class="ind-header wow fadeInUp" data-wow-delay="3.1s">
+    <div class="ind-header__containers"><a class="ind-header__logo" href="/"><img src="./svg/header-logo.svg" alt="logo"></a>
+      <ul class="ind-header__list"> 
+        <li class="ind-header__items"> <a class="ind-header__items-i" href="#service">Как работает ?</a>
+          <div class="ind-header__items-d">●</div>
+        </li>
+        <li class="ind-header__items"> <a class="ind-header__items-i" href="#work">Почему мы ?</a>
+          <div class="ind-header__items-d">●</div>
+        </li>
+        <li class="ind-header__items"> <a class="ind-header__items-i" href="#tariff">Тарифы</a>
+          <div class="ind-header__items-d">●</div>
+        </li>
+        <li class="ind-header__items"> <a class="ind-header__items-i" href="#reviews">Отзывы</a></li>
+      </ul>
+      <div class="ind-header__btns"> <a class="ind-header__enter" href="signin.html"> 
+          <p>Войти</p></a><a class="ind-header__start" href="#">
+          <p>Начать</p></a></div>
+    </div>
+  </header>
+  <div class="containers"> 
+    <div class="error__content"> 
+      <div class="error__content-title">404</div>
+      <div class="error__content-d">Кажется что-то пошло не так! Страница, которую вы запрашиваете, не существует. Возможно она устарела, была удалена, или был введен неверный адрес в адресной строке.</div><a class="error__content-btn" href="index.html"> 
+        <p>Вернуться на сайт</p><img src="./svg/404/arrow.svg" alt="icons"></a>
     </div>
   </div>
-</div>
+</section>
 <script type="module" src="js/webpack.min.js?_v=20220227123325"></script>

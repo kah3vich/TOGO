@@ -43,11 +43,9 @@
 }
 @media (max-width: 700px) {
 	.reset__form-nav {
-		display: flex;
-		flex-direction: column;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
 		gap: 35px;
-		align-items: flex-start;
-		justify-content: flex-start;
 	}
 	.reset__form-wrapper {
 		display: flex;
@@ -104,11 +102,9 @@
 }
 @media (max-width: 700px) {
 	.reg__form-nav {
-		display: flex;
-		flex-direction: column;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
 		gap: 35px;
-		align-items: flex-start;
-		justify-content: flex-start;
 	}
 	.reg__form-wrapper {
 		display: flex;
@@ -165,11 +161,9 @@
 }
 @media (max-width: 700px) {
 	.signin__form-nav {
-		display: flex;
-		flex-direction: column;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
 		gap: 35px;
-		align-items: flex-start;
-		justify-content: flex-start;
 	}
 	.signin__form-wrapper {
 		display: flex;
