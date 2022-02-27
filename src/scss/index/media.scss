@@ -4,6 +4,19 @@
 	}
 }
 
+
+@media (max-width: 450px) and (max-height: 850px) {
+	.ind-headers__content {
+		padding: 45px 0 0 0;
+	}
+	.ind-headers__wrapper {
+		position: relative;
+		padding: 25px 0 75px 0;
+	}
+}
+
+
+
 @media (max-width: 1430px) {
 	.ind-service__content-l .swiper-wrapper {
 		gap: 0;
@@ -91,7 +104,6 @@
 		// gap: 166px 42px;
 		margin: 50px 0 0 0;
 		justify-items: center;
-		grid-auto-flow: dense;
 	}
 	.ind-market__content-i:nth-child(1) {
 		position: relative;
@@ -99,6 +111,7 @@
 		left: auto;
 		bottom: auto;
 		right: auto;
+		margin: 0 0 65px 0;
 		// opacity: 1 !important;
 		// background: #4f6bfd;
 		// & .ind-market__content-p {
@@ -124,7 +137,7 @@
 		// }
 	}
 	.ind-market__content-i:nth-child(3) {
-		margin: 0 0 166px 0;
+		margin: 0 0 90px 0;
 		// background: #4f6bfd;
 		// & .ind-market__content-descr {
 		// 	display: none;
@@ -321,7 +334,7 @@
 	}
 	.ind-market__content {
 		position: relative;
-		padding: 0 0 100px 0;
+		padding: 0 0 0 0;
 	}
 	.ind-market__content-t {
 		position: relative;
@@ -406,7 +419,7 @@
 	}
 	.ind-market__content-l {
 		display: flex;
-		flex-direction: column-reverse;
+		flex-direction: column;
 		align-items: center;
 		justify-content: flex-start;
 	}
@@ -425,6 +438,9 @@
 }
 @media (max-width: 700px) {
 	.ind-headers__content-l {
+		display: none;
+	}
+	.ind-headers__banner {
 		display: none;
 	}
 	.ind-header__containers {
@@ -645,6 +661,12 @@
 		height: 57px;
 		background: url(./../svg/banner/media-decor.svg) no-repeat;
 	}
+	.ind-market__content-d {
+		position: absolute;
+		bottom: 448px;
+		right: 7px;
+		top: auto;
+	}
 }
 @media (max-width: 450px) {
 	.ind-headers__content-t {
@@ -656,6 +678,11 @@
 		line-height: 58px;
 		letter-spacing: 0.01em;
 		color: #333333;
+	}
+	.ind-tariff {
+		width: 100%;
+		background: #ffffff;
+		padding: 120px 0 128px 0;
 	}
 	.ind-banner__content-t::after {
 		content: "";
@@ -669,6 +696,16 @@
 	}
 	.ind-question__content-l {
 		margin: 240px 0 0 auto;
+	}
+	.ind-service__content-t {
+		font-family: NEXTART;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 31px;
+		text-align: center;
+		line-height: 52px;
+		color: #333333;
+		position: relative;
 	}
 	.ind-headers__content-t::after {
 		content: "";

@@ -619,7 +619,7 @@
 .ind-market {
 	background: #fcf7f7;
 	width: 100%;
-	padding: 130px 0 90px 0;
+	padding: 130px 0 0 0;
 	&__content {
 		position: relative;
 		padding: 0 0 260px 0;
@@ -1003,7 +1003,6 @@
 			display: flex;
 			align-items: center;
 			justify-content: flex-start;
-			gap: 20px;
 			& p {
 				font-family: TTNorms;
 				font-style: normal;
@@ -1013,6 +1012,7 @@
 				letter-spacing: -0.011em;
 				color: #525666;
 				transition: all 0.5s ease;
+				margin: 0 0 0 20px;
 			}
 		}
 		&-btn {
@@ -1030,7 +1030,7 @@
 				font-family: TTNorms;
 				font-style: normal;
 				font-weight: 500;
-				font-size: 18px;
+				font-size: 17px;
 				line-height: 120%;
 				letter-spacing: 0.02em;
 				color: #e5f6ff;
@@ -1050,7 +1050,7 @@
 	background: #fff;
 	&__content {
 		width: 100%;
-		padding: 60px 33px;
+		padding: 60px 21px;
 		background: #4f6bfd;
 		border: 2px solid #000000;
 		display: flex;
@@ -1142,7 +1142,7 @@
 		}
 		&-d {
 			position: absolute;
-			top: 239px;
+			top: 94px;
 			left: -266px;
 		}
 		&-l {
@@ -1402,7 +1402,6 @@
 			display: flex;
 			align-items: center;
 			justify-content: flex-start;
-			gap: 20px;
 			& p {
 				font-family: TTNorms;
 				font-style: normal;
@@ -1411,12 +1410,13 @@
 				line-height: 150%;
 				letter-spacing: -0.011em;
 				color: #000000;
+				margin: 0 0 0 20px;
 			}
 		}
 	}
 }
 
-ind-market__content-d-m {
+.ind-market__content-d-m {
 	display: none;
 }
 

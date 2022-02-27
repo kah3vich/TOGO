@@ -8,7 +8,7 @@
 	&__banner {
 		background: #4f6bfd;
 		width: 45%;
-		height: 100%;
+		height: 100vh;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
@@ -16,12 +16,15 @@
 		position: relative;
 		&-logo {
 			position: absolute;
-			top: 50px;
+			top: 35px;
 			left: 100px;
 			cursor: pointer;
 		}
 		&-img {
-			padding: 325px 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
 			margin: auto;
 		}
 	}
@@ -30,12 +33,11 @@
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: flex-start;
-		padding: 70px 0 0 60px;
+		padding: 45px 0 0 60px;
 		&-nav {
 			display: flex;
 			align-items: center;
 			justify-content: flex-start;
-			gap: 190px;
 		}
 		&-back {
 			display: flex;
@@ -59,17 +61,22 @@
 			font-size: 18px;
 			line-height: 28px;
 			color: #8692a6;
+			margin: 0 0 0 230px;
 			& span {
 				color: #4f6bfd;
 			}
 		}
 		&-wrapper {
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-			justify-content: flex-start;
-			width: 427px;
-			padding: 42px 0 0 66px;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 60px 15px;
+			width: 650px;
+			padding: 42px 0 0 0;
+			grid-template-areas: 'regElement_1 regElement_2'
+			'regElement_3 regElement_3'
+			'regElement_4 regElement_5'
+			'regElement_6 regElement_7'
+			'regElement_8 .';
 		}
 		&-title {
 			font-family: TTNorms;
@@ -78,16 +85,19 @@
 			font-size: 30px;
 			line-height: 36px;
 			color: #000000;
+			grid-area: regElement_1;
 		}
 		&-line {
 			width: 100%;
 			height: 0px;
-			border-top: 1px solid #f5f5f5;
-			margin: 23px 0 57px 0;
+			border-top: 1px solid #fff;
+			margin: 23px 0 0px 0;
+			grid-area: regElement_2;
 		}
 		&-btn {
 			background: #4f6bfd;
 			border-radius: 100px;
+			grid-area: regElement_8;
 			width: 100%;
 			padding: 23px 30px;
 			cursor: pointer;
@@ -105,8 +115,8 @@
 		}
 		&-name {
 			width: 100%;
-			height: 64px;
-			margin: 0 0 57px 0;
+			grid-area: regElement_3;
+			height: 45px;
 			background: #ffffff;
 			border: 1px solid #4f6bfd;
 			display: flex;
@@ -148,8 +158,8 @@
 		}
 		&-email {
 			width: 100%;
-			height: 64px;
-			margin: 0 0 57px 0;
+			grid-area: regElement_4;
+			height: 45px;
 			background: #ffffff;
 			border: 1px solid #4f6bfd;
 			display: flex;
@@ -191,8 +201,8 @@
 		}
 		&-phone {
 			width: 100%;
-			margin: 0 0 57px 0;
-			height: 64px;
+			grid-area: regElement_5;
+			height: 45px;
 			background: #ffffff;
 			border: 1px solid #4f6bfd;
 			display: flex;
@@ -234,8 +244,8 @@
 		}
 		&-password {
 			width: 100%;
-			height: 64px;
-			margin: 0 0 57px 0;
+			grid-area: regElement_6;
+			height: 45px;
 			background: #ffffff;
 			border: 1px solid #4f6bfd;
 			display: flex;
@@ -277,8 +287,8 @@
 		}
 		&-passwords {
 			width: 100%;
-			height: 64px;
-			margin: 0 0 57px 0;
+			grid-area: regElement_7;
+			height: 45px;
 			background: #ffffff;
 			border: 1px solid #4f6bfd;
 			display: flex;
@@ -323,7 +333,7 @@
 
 .reg__form-checked {
 	position: relative;
-	margin: 0 0 37px 0;
+	margin: auto;
 }
 
 .reg__form-checkbox__input {
@@ -425,7 +435,7 @@
 	&__banner {
 		background: #4f6bfd;
 		width: 45%;
-		height: 100%;
+		height: 100vh;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
@@ -433,12 +443,15 @@
 		position: relative;
 		&-logo {
 			position: absolute;
-			top: 50px;
+			top: 35px;
 			left: 100px;
 			cursor: pointer;
 		}
 		&-img {
-			padding: 200px 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
 			margin: auto;
 		}
 	}
@@ -447,12 +460,11 @@
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: flex-start;
-		padding: 70px 0 0 60px;
+		padding: 50px 0 0 60px;
 		&-nav {
 			display: flex;
 			align-items: center;
 			justify-content: flex-start;
-			gap: 190px;
 		}
 		&-back {
 			display: flex;
@@ -477,7 +489,9 @@
 			line-height: 28px;
 			color: #1565d8;
 			cursor: pointer;
-			margin: 0 0 35px 0;
+			position: absolute;
+			bottom: 80px;
+			left: 66px;
 		}
 		&-signin {
 			font-family: TTNorms;
@@ -486,16 +500,17 @@
 			font-size: 18px;
 			line-height: 28px;
 			color: #8692a6;
+			margin: 0 0 0 130px;
 			& span {
 				color: #4f6bfd;
 			}
 		}
 		&-wrapper {
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-			justify-content: flex-start;
-			width: 427px;
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+			gap: 55px;
+			position: relative;
+			width: 430px;
 			padding: 42px 0 0 66px;
 		}
 		&-title {
@@ -509,8 +524,8 @@
 		&-line {
 			width: 100%;
 			height: 0px;
-			border-top: 1px solid #f5f5f5;
-			margin: 23px 0 57px 0;
+			border-top: 1px solid #fff;
+			margin: 0 0 0 0;
 		}
 		&-btn {
 			background: #4f6bfd;
@@ -532,8 +547,7 @@
 		}
 		&-name {
 			width: 100%;
-			height: 64px;
-			margin: 0 0 57px 0;
+			height: 45px;
 			background: #ffffff;
 			border: 1px solid #4f6bfd;
 			display: flex;
@@ -575,8 +589,7 @@
 		}
 		&-email {
 			width: 100%;
-			height: 64px;
-			margin: 0 0 57px 0;
+			height: 45px;
 			background: #ffffff;
 			border: 1px solid #4f6bfd;
 			display: flex;
@@ -618,8 +631,7 @@
 		}
 		&-phone {
 			width: 100%;
-			margin: 0 0 57px 0;
-			height: 64px;
+			height: 45px;
 			background: #ffffff;
 			border: 1px solid #4f6bfd;
 			display: flex;
@@ -661,8 +673,7 @@
 		}
 		&-password {
 			width: 100%;
-			height: 64px;
-			margin: 0 0 57px 0;
+			height: 45px;
 			background: #ffffff;
 			border: 1px solid #4f6bfd;
 			display: flex;
@@ -704,8 +715,7 @@
 		}
 		&-passwords {
 			width: 100%;
-			height: 64px;
-			margin: 0 0 57px 0;
+			height: 45px;
 			background: #ffffff;
 			border: 1px solid #4f6bfd;
 			display: flex;
@@ -772,7 +782,7 @@
 	&__banner {
 		background: #4f6bfd;
 		width: 45%;
-		height: 100%;
+		height: 100vh;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
@@ -780,12 +790,15 @@
 		position: relative;
 		&-logo {
 			position: absolute;
-			top: 50px;
+			top: 35px;
 			left: 100px;
 			cursor: pointer;
 		}
 		&-img {
-			padding: 200px 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
 			margin: auto;
 		}
 	}
@@ -794,12 +807,11 @@
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: flex-start;
-		padding: 70px 0 0 60px;
+		padding: 50px 0 0 60px;
 		&-nav {
 			display: flex;
 			align-items: center;
 			justify-content: flex-start;
-			gap: 190px;
 		}
 		&-back {
 			display: flex;
@@ -823,16 +835,16 @@
 			font-size: 18px;
 			line-height: 28px;
 			color: #8692a6;
+			margin: 0 0 0 190px;
 			& span {
 				color: #4f6bfd;
 			}
 		}
 		&-wrapper {
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-			justify-content: flex-start;
-			width: 427px;
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+			gap: 55px;
+			width: 430px;
 			padding: 42px 0 0 66px;
 		}
 		&-title {
@@ -842,6 +854,7 @@
 			font-size: 30px;
 			line-height: 36px;
 			color: #000000;
+			margin: 0 0 15px 0;
 		}
 		&-line {
 			width: 100%;
@@ -867,53 +880,9 @@
 				color: #ffffff;
 			}
 		}
-		&-name {
-			width: 100%;
-			height: 64px;
-			margin: 0 0 57px 0;
-			background: #ffffff;
-			border: 1px solid #4f6bfd;
-			display: flex;
-			align-items: center;
-			justify-content: flex-start;
-			box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.11);
-			border-radius: 100px;
-			position: relative;
-			padding: 0 0 0 30px;
-			& label {
-				font-family: TTNorms;
-				font-style: normal;
-				font-weight: 500;
-				font-size: 16px;
-				line-height: 19px;
-				color: #696f79;
-				position: absolute;
-				top: -30px;
-				left: 0;
-			}
-			& input {
-				width: 90%;
-				height: 90%;
-				font-family: TTNorms;
-				font-style: normal;
-				font-weight: 500;
-				font-size: 14px;
-				line-height: 17px;
-				color: #000;
-				&::placeholder {
-					font-family: TTNorms;
-					font-style: normal;
-					font-weight: 500;
-					font-size: 14px;
-					line-height: 17px;
-					color: #8692a6;
-				}
-			}
-		}
 		&-email {
 			width: 100%;
-			height: 64px;
-			margin: 0 0 37px 0;
+			height: 45px;
 			background: #ffffff;
 			border: 1px solid #4f6bfd;
 			display: flex;
@@ -937,135 +906,6 @@
 			& input {
 				width: 90%;
 				height: 90%;
-				font-family: TTNorms;
-				font-style: normal;
-				font-weight: 500;
-				font-size: 14px;
-				line-height: 17px;
-				color: #000;
-				&::placeholder {
-					font-family: TTNorms;
-					font-style: normal;
-					font-weight: 500;
-					font-size: 14px;
-					line-height: 17px;
-					color: #8692a6;
-				}
-			}
-		}
-		&-phone {
-			width: 100%;
-			margin: 0 0 57px 0;
-			height: 64px;
-			background: #ffffff;
-			border: 1px solid #4f6bfd;
-			display: flex;
-			align-items: center;
-			justify-content: flex-start;
-			box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.11);
-			border-radius: 100px;
-			position: relative;
-			padding: 0 0 0 30px;
-			& label {
-				font-family: TTNorms;
-				font-style: normal;
-				font-weight: 500;
-				font-size: 16px;
-				line-height: 19px;
-				color: #696f79;
-				position: absolute;
-				top: -30px;
-				left: 0;
-			}
-			& input {
-				width: 90%;
-				height: 90%;
-				font-family: TTNorms;
-				font-style: normal;
-				font-weight: 500;
-				font-size: 14px;
-				line-height: 17px;
-				color: #000;
-				&::placeholder {
-					font-family: TTNorms;
-					font-style: normal;
-					font-weight: 500;
-					font-size: 14px;
-					line-height: 17px;
-					color: #8692a6;
-				}
-			}
-		}
-		&-password {
-			width: 100%;
-			height: 64px;
-			margin: 0 0 57px 0;
-			background: #ffffff;
-			border: 1px solid #4f6bfd;
-			display: flex;
-			align-items: center;
-			justify-content: flex-start;
-			box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.11);
-			border-radius: 100px;
-			padding: 0 0 0 30px;
-			position: relative;
-			& label {
-				font-family: TTNorms;
-				font-style: normal;
-				font-weight: 500;
-				font-size: 16px;
-				line-height: 19px;
-				color: #696f79;
-				position: absolute;
-				top: -30px;
-				left: 0;
-			}
-			& input {
-				width: 190px;
-				height: 95%;
-				font-family: TTNorms;
-				font-style: normal;
-				font-weight: 500;
-				font-size: 14px;
-				line-height: 17px;
-				color: #000;
-				&::placeholder {
-					font-family: TTNorms;
-					font-style: normal;
-					font-weight: 500;
-					font-size: 14px;
-					line-height: 17px;
-					color: #8692a6;
-				}
-			}
-		}
-		&-passwords {
-			width: 100%;
-			height: 64px;
-			margin: 0 0 57px 0;
-			background: #ffffff;
-			border: 1px solid #4f6bfd;
-			display: flex;
-			align-items: center;
-			justify-content: flex-start;
-			box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.11);
-			border-radius: 100px;
-			padding: 0 0 0 30px;
-			position: relative;
-			& label {
-				font-family: TTNorms;
-				font-style: normal;
-				font-weight: 500;
-				font-size: 16px;
-				line-height: 19px;
-				color: #696f79;
-				position: absolute;
-				top: -30px;
-				left: 0;
-			}
-			& input {
-				width: 190px;
-				height: 95%;
 				font-family: TTNorms;
 				font-style: normal;
 				font-weight: 500;
